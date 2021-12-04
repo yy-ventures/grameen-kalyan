@@ -383,6 +383,12 @@ body {
   color: #4A4A4A;
 }
 
+@media screen and (max-width: 601px) {
+  .people-section .people-yunus-container .yunus-content h2 {
+    margin-top: 10%;
+  }
+}
+
 .people-section .people-yunus-container .yunus-content .yunus-content-details {
   margin-top: 2rem;
   padding: 2% 0;
