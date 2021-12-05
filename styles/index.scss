@@ -259,7 +259,7 @@
 }
 
 .people-section {
-    padding: 15% 5%;
+    padding: 10% 5%;
     position: relative;
     .people-leaf {
         position: absolute;
@@ -298,13 +298,13 @@
         h3 {
             color: $secondaryColor;
             font-weight: 900;
-            font-size: 4vmin;
+            font-size: 14vmin;
             margin-bottom: 0;
         }
         h2 {
             color: $secondaryColor;
             font-weight: 900;
-            font-size: 8vmin;
+            font-size: 20vmin;
         }
     }
     .people-yunus-container {
@@ -328,7 +328,7 @@
                 border-top: 2px solid $border;
                 border-bottom: 2px solid $border;
                 p {
-                    font-size: 18px;
+                    font-size: 16px;
                     color: $text;
                 }
             }
@@ -361,7 +361,7 @@
         }
     }
     .people-moin-container {
-        margin-top: 10%;
+        margin-top: 6%;
         .yunus-content {
             padding-left: 0;
         }
@@ -412,12 +412,12 @@
         }
     }
     .stories-body {
-        padding: 10% 5% 5% 5%;
+        padding: 10% 7% 5% 7%;
         img {
             width: 100%;
         }
         .stories-body-content{
-            padding: 5% 1% 0 1%;
+            padding: 5% 3% 0 3%;
             h4 {
                 font-size: 9vmin;
                 font-weight: 900;
@@ -588,7 +588,7 @@
     // kalyan video
     .kalyan-video {
         .kalyan-video-container {
-            height: 360px;
+            height: 170px;
         }
     }
     .annual-report-section {

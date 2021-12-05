@@ -307,7 +307,7 @@ body {
 }
 
 .people-section {
-  padding: 15% 5%;
+  padding: 10% 5%;
   position: relative;
 }
 
@@ -358,14 +358,14 @@ body {
 .people-section .millions-smile h3 {
   color: #CC9B2B;
   font-weight: 900;
-  font-size: 4vmin;
+  font-size: 14vmin;
   margin-bottom: 0;
 }
 
 .people-section .millions-smile h2 {
   color: #CC9B2B;
   font-weight: 900;
-  font-size: 8vmin;
+  font-size: 20vmin;
 }
 
 .people-section .people-yunus-container img {
@@ -397,7 +397,7 @@ body {
 }
 
 .people-section .people-yunus-container .yunus-content .yunus-content-details p {
-  font-size: 18px;
+  font-size: 16px;
   color: #4A4A4A;
 }
 
@@ -433,7 +433,7 @@ body {
 }
 
 .people-section .people-moin-container {
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
 .people-section .people-moin-container .yunus-content {
@@ -492,7 +492,7 @@ body {
 }
 
 .stories-section .stories-body {
-  padding: 10% 5% 5% 5%;
+  padding: 10% 7% 5% 7%;
 }
 
 .stories-section .stories-body img {
@@ -500,7 +500,7 @@ body {
 }
 
 .stories-section .stories-body .stories-body-content {
-  padding: 5% 1% 0 1%;
+  padding: 5% 3% 0 3%;
 }
 
 .stories-section .stories-body .stories-body-content h4 {
@@ -676,7 +676,7 @@ body {
     margin-top: 1rem;
   }
   .kalyan-video .kalyan-video-container {
-    height: 360px;
+    height: 170px;
   }
   .annual-report-section .annual-bottom {
     height: 800px;
