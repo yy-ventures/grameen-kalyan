@@ -3,7 +3,7 @@ const menuBtn = document.querySelector(".navigation-icon")
 const menuCross = document.querySelector(".navigation-cross")
 let rellax = new Rellax('.rellax');
 AOS.init({
-    mirror: true
+    mirror: false
 });
 
 menuBtn.addEventListener("click", e => {
