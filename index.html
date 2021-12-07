@@ -45,16 +45,62 @@
             </div>
         </div>
     </header>
-    <!-- info box -->
+    <!-- info buttons -->
     <section class="info-container">
         <div class="info-icon">
-            <img src="./assets/search-icon.svg" alt="">
+            <img src="./assets/search-icon.svg" alt="" id="search-icon">
+        </div>
+        <div class="info-icon phone-icon">
+            <img src="./assets/phone-icon.svg" alt="" id="phone-icon">
         </div>
         <div class="info-icon">
-            <img src="./assets/phone-icon.svg" alt="">
+            <img src="./assets/email-icon.svg" alt="" id="email-icon">
         </div>
-        <div class="info-icon">
-            <img src="./assets/email-icon.svg" alt="">
+    </section>
+    <!-- info boxes -->
+    <section class="info-box-container">
+        <div class="search-input" id="search-input-box">
+            <img src="./assets/btn-cross.svg" alt="" id="cross-btn">
+            <input type="text" placeholder="search" id="search-input-container">
+        </div>
+        <div class="phone-hover d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-evenly">
+                <p>+880244802111,</p>
+                <p>+8809642115500</p>
+            </div>
+        </div>
+        <div class="contact-input-box" id="search-input-box">
+            <div class="cross-contact">
+                <img src="./assets/cross-green.svg" alt="">
+            </div>
+            <div class="input-collection text-center">
+                <h2>contact us</h2>
+            </div>
+            <div class="input-collection">
+                <label for="">Your name</label>
+                <input type="text">
+            </div>
+            <div class="input-collection">
+                <label for="">Your subject</label>
+                <input type="text">
+            </div>
+            <div class="input-collection">
+                <label for="">Your email</label>
+                <input type="email">
+            </div>
+            <div class="input-collection">
+                <label for="">Your message</label>
+                <textarea type="text"></textarea>
+            </div>
+            <div class="input-collection text-center">
+                <button>send</button>
+            </div>
+        </div>
+    </section>
+    <section class="info-box-container">
+        <div class="search-input" id="search-input-box">
+            <img src="./assets/btn-cross.svg" alt="" id="cross-btn">
+            <input type="text" placeholder="search" id="search-input-container">
         </div>
     </section>
     <!-- about container -->
@@ -72,7 +118,18 @@
         <div class="row">
             <div class="col-lg-7 col-12">
                 <div class="services-item-container">
-                    <img src="./assets/services.png" alt="services">
+                    <div class="service-item service-1" data-aos="fade-right" data-aos-anchor-placement="left-left" data-aos-duration="700">
+                        <img src="./assets/service-1.png" alt="">
+                    </div>
+                    <div class="service-item service-2" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
+                        <img src="./assets/service-2.png" alt="">
+                    </div>
+                    <div class="service-item service-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+                        <img src="./assets/service-3.png" alt="">
+                    </div>
+                    <div class="service-item service-4" data-aos="fade-right" data-aos-anchor-placement="right-right" data-aos-duration="700">
+                        <img src="./assets/service-4.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col-lg-5 col-12">
@@ -160,6 +217,7 @@
                             <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">The Vision for Healthier Tomorrow</h2>
                         </div>
                         <div class="yunus-content-details">
+                            <img src="./assets/block-quote.svg" alt="">
                             <p>We are on a mission to serve the low-income population with better quality and maximum convenience.
                                 Grameen Kalyan provides a one-of-a-kind solution that operates in community-based health centres in hard
                                 to access rural areas. Currently, 140 health centres are active in 30 districts across Bangladesh and
@@ -204,22 +262,32 @@
                 </div>
             </div>
         </div>
-        <!-- people leaf -->
-        <div class="people-leaf-bottom">
-            <img src="./assets/people-leaf-bottom.png" alt="people-leaf">
-        </div>
-        <!-- millions smile -->
-        <div class="millions-smile">
-            <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">Making Millions</h3>
-            <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">Smile</h2>
+        <!-- line leaf -->
+        <div class="line-leaf">
+            <img src="./assets/line-leaf.png" alt="">
         </div>
     </section>
 
+    <!-- micro health -->
+    <section class="micro-health">
+        <div>
+            <img src="./assets/micro-health.png" alt="micro-health">
+        </div>
+        <div class="micro-health-btn">
+            <button data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">read more</button>
+        </div>
+    </section>
     <!-- millions smile section -->
     <section class="millions-smile-section">
         <div class="millions-smile-header">
-            <h3>Making Millions</h3>
-            <h2>Smile</h2>
+            <div class="millions-smile-header-content">
+                <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">Making Millions</h3>
+                <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">Smile</h2>
+            </div>
+            <!-- people leaf -->
+            <div class="people-leaf-bottom">
+                <img src="./assets/people-leaf-bottom.png" alt="people-leaf">
+            </div>
         </div>
         <div class="million-smile-body">
             <div>
@@ -241,7 +309,6 @@
                     <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="400">Mother and Child Care</li>
                     <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">Emergency Response</li>
                     <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">Compliance is Priority</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">Micro Health Insurance</li>
                     <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="800">Diagnosis is Key</li>
                     <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">Fighting the Pandemic</li>
                 </ul>
