@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="59" height="38.839" viewBox="0 0 59 38.839">
-  <g id="Group_205" data-name="Group 205" transform="translate(-2414.5 -7132.5)">
-    <line id="Line_9" data-name="Line 9" y2="38" transform="translate(2415.5 7132.5)" fill="none" stroke="#09612d" stroke-width="2"/>
-    <line id="Line_10" data-name="Line 10" y1="37" x2="57" transform="translate(2415.5 7133.5)" fill="none" stroke="#09612d" stroke-width="2"/>
-    <line id="Line_11" data-name="Line 11" x1="59" transform="translate(2414.5 7133.5)" fill="none" stroke="#fff" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="87.067" height="56.383" viewBox="0 0 87.067 56.383">
+  <g id="Group_202" data-name="Group 202" transform="translate(-2395.5 -5226.809)">
+    <g id="Group_201" data-name="Group 201">
+      <g id="Group_200" data-name="Group 200">
+        <line id="Line_9" data-name="Line 9" y2="54" transform="translate(2397.5 5227.5)" fill="none" stroke="#0b612d" stroke-width="4"/>
+        <line id="Line_10" data-name="Line 10" x1="84" y2="53" transform="translate(2397.5 5228.5)" fill="none" stroke="#0b612d" stroke-width="4"/>
+        <line id="Line_11" data-name="Line 11" x1="80" transform="translate(2399.5 5229.5)" fill="none" stroke="#fff" stroke-width="4"/>
+      </g>
+    </g>
   </g>
 </svg>
