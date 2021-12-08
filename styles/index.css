@@ -435,7 +435,7 @@ body {
 }
 
 .annual-report-section .annual-top {
-  padding: 10%;
+  padding: 5% 10% 10% 10%;
   color: #0b612d;
   text-align: center;
 }
@@ -516,14 +516,14 @@ body {
 }
 
 .people-section {
-  padding: 10% 5% 15% 5%;
+  padding: 10% 5% 10% 5%;
   position: relative;
 }
 
 .people-section .people-leaf {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: -1;
 }
 
@@ -533,7 +533,7 @@ body {
 
 .people-section .line-leaf {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 75%;
   z-index: -1;
   -webkit-transform: translateY(-63.5%);
@@ -633,24 +633,24 @@ body {
   content: "";
   position: absolute;
   bottom: -25px;
-  left: 60px;
+  right: 60px;
   width: 50px;
   height: 25px;
   background-color: #0b612d;
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-          clip-path: polygon(0 0, 0% 100%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
 .people-section .people-yunus-container .yunus-content .yunus-content-details::after {
   content: "";
   position: absolute;
   bottom: -22px;
-  left: 62px;
+  right: 62px;
   width: 43px;
   height: 22px;
   background-color: #ffffff;
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-          clip-path: polygon(0 0, 0% 100%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
 .people-section .people-yunus-container .yunus-content .yunus-content-details p {
@@ -754,24 +754,24 @@ body {
   content: "";
   position: absolute;
   bottom: -25px;
-  right: 60px;
+  left: 60px;
   width: 50px;
   height: 25px;
   background-color: #0b612d;
-  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
-          clip-path: polygon(0 0, 100% 100%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+          clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
 
 .people-section .people-moin-container .moin-content .moin-content-details::after {
   content: "";
   position: absolute;
   bottom: -22px;
-  right: 62px;
+  left: 62px;
   width: 43px;
   height: 22px;
   background-color: #ffffff;
-  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
-          clip-path: polygon(0 0, 100% 100%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+          clip-path: polygon(0 0, 0% 100%, 100% 0);
 }
 
 .people-section .people-moin-container .moin-content .moin-content-details p {
@@ -828,6 +828,7 @@ body {
 
 .micro-health {
   position: relative;
+  padding-top: 10%;
 }
 
 .micro-health img {

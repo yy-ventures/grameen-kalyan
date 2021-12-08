@@ -360,9 +360,10 @@
         height: 720px;
     }
 }
+
 .annual-report-section {
     .annual-top {
-        padding: 10%;
+        padding: 5% 10% 10% 10%;
         color: $primaryColor;
         text-align: center;
         h4 {
@@ -428,12 +429,12 @@
 }
 
 .people-section {
-    padding: 10% 5% 15% 5%;
+    padding: 10% 5% 10% 5%;
     position: relative;
     .people-leaf {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         z-index: -1;
         img {
             height: 60vmin;
@@ -441,7 +442,7 @@
     }
     .line-leaf {
         position: absolute;
-        right: 0;
+        left: 0;
         top: 75%;
         z-index: -1;
         transform: translateY(-63.5%);
@@ -514,21 +515,21 @@
                     content: "";
                     position: absolute;
                     bottom: -25px;
-                    left: 60px;
+                    right: 60px;
                     width: 50px;
                     height: 25px;
                     background-color: $primaryColor;
-                    clip-path: polygon(0 0, 0% 100%, 100% 0);
+                    clip-path: polygon(0 0, 100% 100%, 100% 0);
                 }
                 &::after {
                     content: "";
                     position: absolute;
                     bottom: -22px;
-                    left: 62px;
+                    right: 62px;
                     width: 43px;
                     height: 22px;
                     background-color: $white;
-                    clip-path: polygon(0 0, 0% 100%, 100% 0);
+                    clip-path: polygon(0 0, 100% 100%, 100% 0);
                 }
                 p {
                     font-size: 16px;
@@ -607,21 +608,21 @@
                     content: "";
                     position: absolute;
                     bottom: -25px;
-                    right: 60px;
+                    left: 60px;
                     width: 50px;
                     height: 25px;
                     background-color: $primaryColor;
-                    clip-path: polygon(0 0, 100% 100%, 100% 0);
+                    clip-path: polygon(0 0, 0% 100%, 100% 0);
                 }
                 &::after {
                     content: "";
                     position: absolute;
                     bottom: -22px;
-                    right: 62px;
+                    left: 62px;
                     width: 43px;
                     height: 22px;
                     background-color: $white;
-                    clip-path: polygon(0 0, 100% 100%, 100% 0);
+                    clip-path: polygon(0 0, 0% 100%, 100% 0);
                 }
                 p {
                     font-size: 16px;
@@ -671,6 +672,7 @@
 }
 .micro-health {
     position: relative;
+    padding-top: 10%;
     img {
         width: 100%;
         z-index: -1;
