@@ -334,6 +334,18 @@
             text-transform: capitalize;
             border-radius: 10px;
             margin-top: 2rem;
+            transition: 0.3s;
+            font-weight: 700;
+            &:hover {
+                border: 2px solid $primaryColor;
+                color: $white;
+                background-color: $primaryColor;
+            }
+        }
+        @media screen and (min-width: 1441px) {
+            h2 {
+                font-size: 5vmin;
+            }
         }
     }
 }
@@ -485,59 +497,68 @@
                 @media screen and (max-width: 601px) {
                     margin-top: 10%;
                 }
+                @media screen and (min-width: 1441px) {
+                    font-size: 7vmin;
+                }
             }
             .yunus-content-details {
-                margin-top: 2rem;
+                margin-top: 30%;
                 padding: 4% 0;
                 border-top: 2px solid $primaryColor;
                 border-bottom: 2px solid $primaryColor;
                 position: relative;
+                @media screen and (min-width: 1441px) {
+                    margin-top: 40%;
+                }
                 &::before {
                     content: "";
                     position: absolute;
-                    width: 0;
-                    height: 0;
+                    bottom: -25px;
+                    left: 60px;
+                    width: 50px;
+                    height: 25px;
+                    background-color: $primaryColor;
+                    clip-path: polygon(0 0, 0% 100%, 100% 0);
                 }
                 &::after {
                     content: "";
                     position: absolute;
-                    width: 0;
-                    height: 0;
+                    bottom: -22px;
+                    left: 62px;
+                    width: 43px;
+                    height: 22px;
+                    background-color: $white;
+                    clip-path: polygon(0 0, 0% 100%, 100% 0);
                 }
                 p {
                     font-size: 16px;
                     color: $text;
                     margin: 0;
-                }
-            }
-            .speech-triangle {
-                &::before {
-                    left: 30px;
-                    bottom: -50px;
-                    border: 25px solid;
-                    border-color: #333 transparent transparent #333;
-                }
-            }
-            .speech-triangle{
-                &::after {
-                    left: 38px;
-                    bottom: -30px;
-                    border: 15px solid;
-                    border-color: #fff transparent transparent #fff;
+                    @media screen and (min-width: 1441px) {
+                        font-size: 20px;
+                    }
                 }
             }
             .yunus-designation {
                 margin-top: 3rem;
-            }
-            h6 {
-                font-weight: 700;
-                font-size: 17px;
-                color: $text;
-                margin-bottom: 0;
-            }
-            small {
-                font-size: 16px;
-                color: $text;
+                h6 {
+                    font-weight: 700;
+                    font-size: 17px;
+                    color: $text;
+                    margin-bottom: 0;
+                }
+                small {
+                    font-size: 16px;
+                    color: $text;
+                }
+                @media screen and (min-width: 1441px) {
+                    h6 {
+                        font-size: 19px;
+                    }
+                    small {
+                        font-size: 18px;
+                    }
+                }
             }
             .yunus-btn {
                 margin-top: 2rem;
@@ -555,13 +576,96 @@
         }
     }
     .people-moin-container {
-        margin-top: 15%;
-        .yunus-content {
-            padding-left: 0;
-        }
+        margin-top: 10%;
         img {
             width: 100%;
             z-index: 1000;
+        }
+        .moin-content {
+            padding: 0 5%;
+            h2 {
+                font-size: 6vmin;
+                font-weight: 900;
+                color: $text;
+                @media screen and (max-width: 601px) {
+                    margin-top: 10%;
+                }
+                @media screen and (min-width: 1441px) {
+                    font-size: 7vmin;
+                }
+            }
+            .moin-content-details {
+                margin-top: 30%;
+                padding: 4% 0;
+                border-top: 2px solid $primaryColor;
+                border-bottom: 2px solid $primaryColor;
+                position: relative;
+                @media screen and (min-width: 1441px) {
+                    margin-top: 40%;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -25px;
+                    right: 60px;
+                    width: 50px;
+                    height: 25px;
+                    background-color: $primaryColor;
+                    clip-path: polygon(0 0, 100% 100%, 100% 0);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -22px;
+                    right: 62px;
+                    width: 43px;
+                    height: 22px;
+                    background-color: $white;
+                    clip-path: polygon(0 0, 100% 100%, 100% 0);
+                }
+                p {
+                    font-size: 16px;
+                    color: $text;
+                    margin: 0;
+                    @media screen and (min-width: 1441px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .moin-designation {
+                margin-top: 3rem;
+                h6 {
+                    font-weight: 700;
+                    font-size: 17px;
+                    color: $text;
+                    margin-bottom: 0;
+                }
+                small {
+                    font-size: 16px;
+                    color: $text;
+                }
+                @media screen and (min-width: 1441px) {
+                    h6 {
+                        font-size: 19px;
+                    }
+                    small {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .moin-btn {
+                margin-top: 2rem;
+                button {
+                    outline: none;
+                    background: inherit;
+                    border: 2px solid #95c11f;
+                    padding: 1% 5%;
+                    font-size: 18px;
+                    color: $primaryColor;
+                    text-transform: capitalize;
+                    border-radius: 10px;
+                }
+            }
         }
     }
 }
@@ -579,13 +683,20 @@
         bottom: 10%;
         button {
             outline: none;
-            border: 2px solid $white;
+            border: 2px solid $lightGreen;
             padding: 8px 35px;
             font-size: 18px;
             border-radius: 10px;
             background-color: inherit;
             color: $white;
             text-transform: capitalize;
+            font-weight: 700;
+            transition: 0.3s;
+            &:hover {
+                border: 2px solid $primaryColor;
+                color: $white;
+                background-color: $primaryColor;
+            }
         }
     }
 }
@@ -652,6 +763,9 @@
         }
         .stories-body-content {
             padding: 5% 3% 0 3%;
+            @media screen and (min-width: 1441px) {
+                padding-top: 10%;
+            }
             h4 {
                 font-size: 9vmin;
                 font-weight: 900;
@@ -668,8 +782,13 @@
             .stories-details {
                 margin-top: 2rem;
                 p {
-                    font-size: 20px;
+                    font-size: 18px;
                     color: $text;
+                }
+                @media screen and (min-width: 1441px) {
+                    p {
+                        font-size: 20px;
+                    }
                 }
             }
             .stories-btn {
@@ -677,14 +796,20 @@
                 button {
                     outline: none;
                     background: inherit;
-                    border: 2px solid $secondaryColor;
+                    border: 2px solid $lightGreen;
                     padding: 1% 5%;
                     font-size: 18px;
-                    color: $white;
-                    background: $secondaryColor;
+                    color: $primaryColor;
+                    background: inherit;
                     text-transform: capitalize;
                     border-radius: 10px;
                     font-weight: 700;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: $primaryColor;
+                        color: $lightGreen;
+                        border: 2px solid $primaryColor;
+                    }
                 }
             }
         }
@@ -857,17 +982,19 @@
             }
         }
         .phone-hover {
-            height: 50px;
+            height: auto;
+            padding: 1% 0;
             position: fixed;
-            bottom: 14vh;
-            right: 65px;
+            bottom: 7vh;
+            right: 36px;
             border-radius: 5px;
             z-index: 5000;
             width: 250px;
             p {
                 font-size: 16px;
                 margin: 0;
-                padding: 0 1%;
+                padding: 1%;
+                color: $primaryColor;
             }
         }
         .contact-input-box {
@@ -968,6 +1095,47 @@
                         font-weight: 700;
                         color: $white;
                     }
+                }
+            }
+        }
+    }
+    // people section
+    .people-section {
+        .people-yunus-container {
+            .yunus-content {
+                .yunus-content-details {
+                    margin-top: 15%;
+                }
+            }
+        }
+        .people-moin-container {
+            margin-top: 15%;
+            .moin-content {
+                .moin-content-details {
+                    margin-top: 15%;
+                }
+            }
+        }
+    }
+    // micro health
+    .micro-health {
+        .micro-health-btn {
+            bottom: 10%;
+            button {
+                outline: none;
+                border: 2px solid $lightGreen;
+                padding: 6px 32px;
+                font-size: 16px;
+                border-radius: 10px;
+                background-color: inherit;
+                color: $white;
+                text-transform: capitalize;
+                font-weight: 700;
+                transition: 0.3s;
+                &:hover {
+                    border: 2px solid $primaryColor;
+                    color: $white;
+                    background-color: $primaryColor;
                 }
             }
         }
