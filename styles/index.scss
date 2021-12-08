@@ -532,11 +532,11 @@
                     clip-path: polygon(0 0, 100% 100%, 100% 0);
                 }
                 p {
-                    font-size: 16px;
+                    font-size: 20px;
                     color: $text;
                     margin: 0;
                     @media screen and (min-width: 1441px) {
-                        font-size: 20px;
+                        font-size: 24px;
                     }
                 }
             }
@@ -544,13 +544,14 @@
                 margin-top: 3rem;
                 h6 {
                     font-weight: 700;
-                    font-size: 17px;
+                    font-size: 18px;
                     color: $text;
-                    margin-bottom: 0;
+                    margin-bottom: 0.5rem;
                 }
                 small {
-                    font-size: 16px;
+                    font-size: 17px;
                     color: $text;
+                    margin-top: 2rem;
                 }
                 @media screen and (min-width: 1441px) {
                     h6 {
@@ -596,13 +597,13 @@
                 }
             }
             .moin-content-details {
-                margin-top: 30%;
+                margin-top: 20%;
                 padding: 4% 0;
                 border-top: 2px solid $primaryColor;
                 border-bottom: 2px solid $primaryColor;
                 position: relative;
                 @media screen and (min-width: 1441px) {
-                    margin-top: 40%;
+                    margin-top: 30%;
                 }
                 &::before {
                     content: "";
@@ -625,11 +626,11 @@
                     clip-path: polygon(0 0, 0% 100%, 100% 0);
                 }
                 p {
-                    font-size: 16px;
+                    font-size: 20px;
                     color: $text;
                     margin: 0;
                     @media screen and (min-width: 1441px) {
-                        font-size: 20px;
+                        font-size: 24px;
                     }
                 }
             }
@@ -637,20 +638,20 @@
                 margin-top: 3rem;
                 h6 {
                     font-weight: 700;
-                    font-size: 17px;
+                    font-size: 18px;
                     color: $text;
-                    margin-bottom: 0;
+                    margin-bottom: 0.5rem;
                 }
                 small {
-                    font-size: 16px;
+                    font-size: 17px;
                     color: $text;
                 }
                 @media screen and (min-width: 1441px) {
                     h6 {
-                        font-size: 19px;
+                        font-size: 20px;
                     }
                     small {
-                        font-size: 18px;
+                        font-size: 19px;
                     }
                 }
             }

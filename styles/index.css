@@ -654,14 +654,14 @@ body {
 }
 
 .people-section .people-yunus-container .yunus-content .yunus-content-details p {
-  font-size: 16px;
+  font-size: 20px;
   color: #4A4A4A;
   margin: 0;
 }
 
 @media screen and (min-width: 1441px) {
   .people-section .people-yunus-container .yunus-content .yunus-content-details p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -671,14 +671,15 @@ body {
 
 .people-section .people-yunus-container .yunus-content .yunus-designation h6 {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   color: #4A4A4A;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .people-section .people-yunus-container .yunus-content .yunus-designation small {
-  font-size: 16px;
+  font-size: 17px;
   color: #4A4A4A;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 1441px) {
@@ -737,7 +738,7 @@ body {
 }
 
 .people-section .people-moin-container .moin-content .moin-content-details {
-  margin-top: 30%;
+  margin-top: 20%;
   padding: 4% 0;
   border-top: 2px solid #0b612d;
   border-bottom: 2px solid #0b612d;
@@ -746,7 +747,7 @@ body {
 
 @media screen and (min-width: 1441px) {
   .people-section .people-moin-container .moin-content .moin-content-details {
-    margin-top: 40%;
+    margin-top: 30%;
   }
 }
 
@@ -775,14 +776,14 @@ body {
 }
 
 .people-section .people-moin-container .moin-content .moin-content-details p {
-  font-size: 16px;
+  font-size: 20px;
   color: #4A4A4A;
   margin: 0;
 }
 
 @media screen and (min-width: 1441px) {
   .people-section .people-moin-container .moin-content .moin-content-details p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -792,22 +793,22 @@ body {
 
 .people-section .people-moin-container .moin-content .moin-designation h6 {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   color: #4A4A4A;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .people-section .people-moin-container .moin-content .moin-designation small {
-  font-size: 16px;
+  font-size: 17px;
   color: #4A4A4A;
 }
 
 @media screen and (min-width: 1441px) {
   .people-section .people-moin-container .moin-content .moin-designation h6 {
-    font-size: 19px;
+    font-size: 20px;
   }
   .people-section .people-moin-container .moin-content .moin-designation small {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
