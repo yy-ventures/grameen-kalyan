@@ -72,13 +72,13 @@
     }
     .header-content {
         height: 85%;
-        background-image: url("../assets/bg-main.png");
+        background-image: url("../assets/bg-main.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: relative;
         @media screen and (max-width: 601px) {
-            background-image: url("../assets/bg-main-mobile.png");
+            background-image: url("../assets/bg-main-mobile.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -382,14 +382,14 @@
     .annual-bottom {
         height: 800px;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(9, 97, 45, 0.6)),
-            url("../assets/annually-bottom.png");
+            url("../assets/annually-bottom.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: relative;
         @media screen and (max-width: 601px) {
             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(9, 97, 45, 0.6)),
-                url("../assets/annually-bottom-mobile.png");
+                url("../assets/annually-bottom-mobile.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
