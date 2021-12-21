@@ -766,6 +766,9 @@ body {
     margin-top: 2rem;
     padding: 2% 0;
   }
+  .header-section .header-content {
+    height: 91%;
+  }
   .header-section .header-content .header-tagline {
     left: 5%;
     top: 75%;
