@@ -335,14 +335,14 @@
 .service-healthcare {
     height: 1000px;
     .service-healthcare-header {
-        height: 50%;
+        height: 450px;
         position: relative;
         .service-right-leaf {
             position: absolute;
             top: 0;
             right: 0;
             img {
-                height: 50vmin;
+                height: 40vmin;
             }
         }
         .healthcare-tagline {
@@ -351,7 +351,7 @@
             left: 50%;
             transform: translateX(-100%);
             h2 {
-                font-size: 12vmin;
+                font-size: 11vmin;
                 text-transform: capitalize;
                 font-weight: 900;
                 color: $secondaryColor;
@@ -359,20 +359,20 @@
             }
             @media screen and (min-width: 1441px) {
                 h2 {
-                    font-size: 15vmin;
+                    font-size: 13vmin;
                 }
             }
         }
     }
     .service-healthcare-footer {
-        height: 50%;
+        height: 550px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         // grid-auto-flow: dense;
         // direction: rtl;
         img {
             width: 100%;
-            height: 500px;
+            height: 550px;
             object-fit: cover;
         }
         .service-healthcare-footer-content {
@@ -402,7 +402,7 @@
 
 // service wellbeing
 .service-wellbeing {
-    height: 850px;
+    height: 900px;
     .service-wellbeing-header {
         height: 350px;
         position: relative;
@@ -411,7 +411,7 @@
             bottom: 1%;
             right: 5%;
             h2 {
-                font-size: 12vmin;
+                font-size: 11vmin;
                 text-transform: capitalize;
                 font-weight: 900;
                 color: $primaryColor;
@@ -420,25 +420,25 @@
             }
             @media screen and (min-width: 1441px) {
                 h2 {
-                    font-size: 15vmin;
+                    font-size: 12vmin;
                 }
             }
         }
-        .social-tagline{
-            h2{
-                font-size: 12vmin;
-            }        
-        }
+        // .social-tagline{
+        //     h2{
+        //         font-size: 12vmin;
+        //     }        
+        // }
     }
     .service-wellbeing-footer {
-        height: 500px;
+        height: 550px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         // grid-auto-flow: dense;
         // direction: rtl;
         img {
             width: 100%;
-            height: 500px;
+            height: 550px;
             object-fit: cover;
         }
         .service-wellbeing-footer-content {
@@ -446,7 +446,7 @@
             border-top-left-radius: 250px;
             padding: 5% 5% 5% 15%;
             color: $text;
-            height: 500px;
+            height: 550px;
             h4 {
                 font-weight: 600;
                 font-size: 3vmin;
