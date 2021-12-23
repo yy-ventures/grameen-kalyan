@@ -28,7 +28,7 @@
                 <a href="/">home</a>
                 <a href="#">about us</a>
                 <a href="./service.html">services</a>
-                <a href="#">healthcare</a>
+                <a href="./healthcare.html">healthcare</a>
                 <a href="#">people</a>
                 <a href="#">contact</a>
             </div>
@@ -292,27 +292,47 @@
             </div>
         </div>
         <div class="million-smile-body">
-            <div>
-                <img src="./assets/millions.webp" alt="million-smile" class="millios-category">
-            </div>
-            <div class="woman-child">
-                <img src="./assets/woman-child.webp" alt="woman-child">
+            <div class="smile-body-listings">
+                <div class="woman-child">
+                    <div class="smile-body-circle" id="smileCircle"></div>
+                </div>
+                <!-- smile-body-listings-left -->
+                <div class="smile-body-listings-left">
+                    <div class="smile-list-item smile-list-item-1" id="smileList1">
+                        <p>Mother and Child Care</p>
+                    </div>
+                    <div class="smile-list-item smile-list-item-2" id="smileList2">
+                        <p>Emergency Response</p>
+                    </div>
+                </div>
+                <!-- smile-body-listings-right -->
+                <div class="smile-body-listings-right">
+                    <div class="smile-list-item smile-list-item-3" id="smileList3">
+                        <p>Compliance is Priority</p>
+                    </div>
+                    <div class="smile-list-item smile-list-item-4" id="smileList4">
+                        <p>Diagnosis is Key</p>
+                    </div>
+                    <div class="smile-list-item smile-list-item-5" id="smileList5">
+                        <p>Fighting the Pandemic</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="million-smile-body-mobile">
-            <div class="women-child-container">
-                <img src="./assets/woman-child.webp" alt="">
+            <div class="women-child-container" id="smileCircle">
+                <div class="women-child-container-circle"></div>
             </div>
             <div class="stories-header mt-3">
                 <img src="./assets/Stories.png" alt="">
             </div>
             <div class="stories-list">
                 <ul>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="400">Mother and Child Care</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">Emergency Response</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">Compliance is Priority</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="800">Diagnosis is Key</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">Fighting the Pandemic</li>
+                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="400" id="smileList1">Mother and Child Care</li>
+                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" id="smileList2">Emergency Response</li>
+                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600" id="smileList3">Compliance is Priority</li>
+                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="800" id="smileList4">Diagnosis is Key</li>
+                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="900" id="smileList5">Fighting the Pandemic</li>
                 </ul>
             </div>
         </div>
@@ -401,5 +421,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/counter.js"></script>
+    <script src="./js/image-hover.js"></script>
 </body>
 </html>
