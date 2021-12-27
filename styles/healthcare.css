@@ -113,7 +113,7 @@ body {
 
 @media screen and (max-width: 601px) {
   .header-section .header-content {
-    background-image: url("../assets/bg-main-mobile.webp");
+    background-image: url("../assets/healthcare/healthcare-bg-mobile.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -345,34 +345,148 @@ body {
   width: 25px;
 }
 
-.millions-smile-section .millions-smile-header {
-  padding: 10% 5% 1% 5%;
+.health-grid-section {
+  padding: 10% 0 15% 0;
+  background-color: #0b612d;
   position: relative;
 }
 
-.millions-smile-section .millions-smile-header .millions-smile-header-content h3 {
-  color: #CC9B2B;
-  font-weight: 900;
-  font-size: 6vmin;
-  margin-bottom: 0;
+@media screen and (max-width: 601px) {
+  .health-grid-section {
+    padding: 15% 0 65% 0;
+  }
+}
+
+.health-grid-section .grid-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.health-grid-section .grid-top-left img {
+  height: 20vmin;
+}
+
+.health-grid-section .grid-bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.health-grid-section .grid-bottom-right img {
+  height: 100vmin;
+}
+
+.health-grid-section .health-grid-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.health-grid-section .health-grid-container .health-grid-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 3% 3%;
+}
+
+@media screen and (max-width: 601px) {
+  .health-grid-section .health-grid-container .health-grid-list {
+    gap: 10% 5%;
+  }
+}
+
+.health-grid-section .health-grid-container .health-grid-list .grid-item {
+  max-height: 40vh;
+}
+
+@media screen and (max-width: 601px) {
+  .health-grid-section .health-grid-container .health-grid-list .grid-item {
+    max-height: 25vh;
+  }
+}
+
+.health-grid-section .health-grid-container .health-grid-list .grid-item .grid-image {
+  border-radius: 10px;
+  height: 85%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.health-grid-section .health-grid-container .health-grid-list .grid-item .grid-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.health-grid-section .health-grid-container .health-grid-list .grid-item .grid-image:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.health-grid-section .health-grid-container .health-grid-list .grid-item .grid-content {
+  text-align: center;
+}
+
+.health-grid-section .health-grid-container .health-grid-list .grid-item .grid-content h3 {
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 601px) {
+  .health-grid-section .health-grid-container .health-grid-list .grid-item .grid-content h3 {
+    font-size: 18px;
+  }
+}
+
+.millions-smile-section .millions-smile-header {
+  padding: 10% 5% 10% 5%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.millions-smile-section .millions-smile-header .millions-smile-header-content {
+  text-align: center;
+  width: 25%;
 }
 
 .millions-smile-section .millions-smile-header .millions-smile-header-content h2 {
-  color: #CC9B2B;
+  color: #0b612d;
   font-weight: 900;
-  font-size: 10vmin;
+  font-size: 7vmin;
   margin-bottom: 0;
 }
 
-.millions-smile-section .millions-smile-header .people-leaf-bottom {
+.millions-smile-section .millions-smile-header .millions-smile-header-content p {
+  font-size: 18px;
+  color: #4A4A4A;
+  margin-top: 2em;
+}
+
+.millions-smile-section .millions-smile-header .health-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.millions-smile-section .millions-smile-header .health-right-top {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: -1;
-}
-
-.millions-smile-section .millions-smile-header .people-leaf-bottom img {
-  height: 60vmin;
 }
 
 .millions-smile-section .million-smile-body {
@@ -385,7 +499,7 @@ body {
 
 .millions-smile-section .million-smile-body .smile-body-listings {
   height: 550px;
-  background-image: linear-gradient(45deg, #dad565, #cd9c2b);
+  background-image: linear-gradient(45deg, #95c11f, #0b612d);
   position: relative;
 }
 
@@ -402,8 +516,8 @@ body {
   height: 650px;
   width: 650px;
   border-radius: 50%;
-  border: 20px solid #CC9B2B;
-  background-image: url("../assets/stories/mother-child.webp");
+  border: 20px solid #95c11f;
+  background-image: url("../assets/healthcare/health-story/medicine.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -436,6 +550,10 @@ body {
 
 .millions-smile-section .million-smile-body .smile-body-listings-left .smile-list-item-1 {
   margin-left: 2em;
+}
+
+.millions-smile-section .million-smile-body .smile-body-listings-left .smile-list-item-2 {
+  margin-left: 1em;
 }
 
 @media screen and (min-width: 1441px) {
@@ -487,11 +605,11 @@ body {
   font-size: 18px;
 }
 
-.millions-smile-section .million-smile-body .smile-body-listings-right .smile-list-item-4 {
+.millions-smile-section .million-smile-body .smile-body-listings-right .smile-list-item-5 {
   margin-left: -2em;
 }
 
-.millions-smile-section .million-smile-body .smile-body-listings-right .smile-list-item-5 {
+.millions-smile-section .million-smile-body .smile-body-listings-right .smile-list-item-6 {
   margin-left: -3em;
 }
 
@@ -523,12 +641,18 @@ body {
   display: none;
 }
 
-.stories-section .stories-header {
-  padding: 0 10%;
+.stories-section {
+  position: relative;
 }
 
-.stories-section .stories-header img {
-  width: 100%;
+.stories-section .health-leaf-bottom {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.stories-section .health-leaf-bottom img {
+  height: 40vmin;
 }
 
 .stories-section .stories-body {
@@ -737,22 +861,21 @@ body {
     margin-top: 2rem;
     padding: 2% 0;
   }
-  .header-section .header-content .header-leaf-left img {
-    height: 65vmin;
-  }
   .header-section .header-content .header-tagline {
-    left: 42%;
-    top: 50%;
+    width: 100%;
+    height: 50vh;
+    border-top-left-radius: 150px;
+    top: 0;
+    right: 0;
   }
-  .header-section .header-content .header-tagline img {
-    height: 45vmin;
+  .header-section .header-content .header-tagline .header-leaf-left img {
+    height: 55vmin;
   }
-  .header-section .header-content .header-glory {
-    right: 10%;
-    top: 10%;
+  .header-section .header-content .header-tagline h3 {
+    font-size: 6vmin;
   }
-  .header-section .header-content .header-glory img {
-    height: 25vmin;
+  .header-section .header-content .header-tagline h1 {
+    font-size: 11vmin;
   }
   .info-container {
     height: 180px;
@@ -827,114 +950,21 @@ body {
     font-size: 16px;
     margin-top: 0.5rem;
   }
-  .about-section {
-    padding: 10%;
-    position: relative;
+  .millions-smile-section .millions-smile-header .millions-smile-header-content {
+    text-align: center;
+    width: 100%;
   }
-  .about-section .about-content h2 {
+  .millions-smile-section .millions-smile-header .millions-smile-header-content h2 {
     font-size: 10vmin;
   }
-  .about-section .about-content p {
-    font-size: 6vmin;
-  }
-  .services {
-    padding: 15% 10%;
-  }
-  .services .services-item-container img {
-    width: 100%;
-  }
-  .services .services-content {
-    padding-left: 0;
-    padding-top: 10%;
-  }
-  .services .services-content h2 {
-    color: #ffffff;
-    font-size: 6vmin;
-  }
-  .services .services-content button {
+  .millions-smile-section .millions-smile-header .millions-smile-header-content p {
     font-size: 16px;
-    color: #ffffff;
-    margin-top: 1rem;
   }
-  .kalyan-video .kalyan-video-container {
-    height: 170px;
+  .millions-smile-section .millions-smile-header .health-left img {
+    height: 15vh;
   }
-  .annual-report-section .annual-bottom {
-    height: 800px;
-    position: relative;
-  }
-  .annual-report-section .annual-bottom .annual-stroke {
-    position: absolute;
-    top: -10vmin;
-  }
-  .annual-report-section .annual-bottom .annual-stroke img {
-    height: 20vmin;
-  }
-  .annual-report-section .annual-bottom .annual-reports {
-    padding: 5% 10%;
-    position: absolute;
-    bottom: 25%;
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%);
-    left: 0;
-    width: 100%;
-  }
-  .annual-report-section .annual-bottom .annual-reports .annual-reports-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 3%;
-  }
-  .annual-report-section .annual-bottom .annual-reports .annual-reports-grid h3 {
-    color: #ffffff;
-    font-size: 8vmin;
-    font-weight: 900;
-  }
-  .annual-report-section .annual-bottom .annual-reports .annual-reports-grid p {
-    font-size: 18px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-  .people-section .people-yunus-container .yunus-content .yunus-content-details {
-    margin-top: 15%;
-  }
-  .people-section .people-moin-container {
-    margin-top: 15%;
-  }
-  .people-section .people-moin-container .moin-content .moin-content-details {
-    margin-top: 15%;
-  }
-  .micro-health .micro-health-btn {
-    bottom: 10%;
-  }
-  .micro-health .micro-health-btn button {
-    outline: none;
-    border: 2px solid #95c11f;
-    padding: 6px 32px;
-    font-size: 16px;
-    border-radius: 10px;
-    background-color: inherit;
-    color: #ffffff;
-    text-transform: capitalize;
-    font-weight: 700;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .micro-health .micro-health-btn button:hover {
-    border: 2px solid #0b612d;
-    color: #ffffff;
-    background-color: #0b612d;
-  }
-  .millions-smile-section .millions-smile-header {
-    padding: 10% 5%;
-    display: block;
-  }
-  .millions-smile-section .millions-smile-header h3 {
-    font-size: 8vmin;
-  }
-  .millions-smile-section .millions-smile-header h2 {
-    font-size: 12vmin;
+  .millions-smile-section .millions-smile-header .health-right-top img {
+    height: 15vh;
   }
   .millions-smile-section .million-smile-body {
     display: none;
@@ -952,7 +982,7 @@ body {
     width: 300px;
     border-radius: 50%;
     margin: 0 auto;
-    background-image: url("../assets/stories/mother-child.webp");
+    background-image: url("../assets/healthcare/health-story/medicine.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -983,6 +1013,9 @@ body {
     text-align: center;
     background: #CC9B2B;
     cursor: pointer;
+  }
+  .stories-section .health-leaf-bottom {
+    display: none;
   }
   .footer-section {
     height: auto;
