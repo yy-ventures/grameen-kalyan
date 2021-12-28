@@ -56,16 +56,68 @@
             justify-content: space-around;
             margin-top: -($navigationMeasure / 2);
             z-index: 1000;
+            padding: 0 1%;
             a {
                 text-decoration: none;
                 text-transform: capitalize;
-                font-size: 1.2rem;
-                font-weight: 700;
+                font-size: 18px;
+                font-weight: 600;
                 color: $white;
                 padding: 1%;
                 transition: 0.3s;
                 &:hover {
                     color: $secondaryColor;
+                }
+            }
+            .dropdown-container{
+                position: relative;
+
+                .container-btn{
+                    cursor: pointer;
+                    a{
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                }
+                .down-arrow{
+                    position: absolute;
+                    right: -50%;
+                    top: 10%;
+                    transition: 0.3s;
+                    img{
+                        width: 15px;
+                    }
+                }
+                ul{
+                    margin: 0;
+                    position: absolute;
+                    top: 200%;
+                    left: -50%;
+                    background-color: $primaryColor;
+                    list-style: none;
+                    padding-left: 0;
+                    padding: 0 20%;
+                    border-radius: 5px;
+                    display: none;
+                    li{
+                        width: 120px;
+                        padding: 10px;
+                        border-bottom: 1px solid $lightGreen;
+                        &:last-child{
+                            border-bottom: 0;
+                        }
+                        a{
+                            font-size: 17px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            @media screen and (min-width: 1441px) {
+                a{
+                    font-size: 1.2rem;
+                    font-weight: 700;
                 }
             }
         }

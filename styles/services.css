@@ -86,8 +86,8 @@ body {
 .header-section .navigation-container .navigation-menu a {
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 600;
   color: #ffffff;
   padding: 1%;
   -webkit-transition: 0.3s;
@@ -99,12 +99,19 @@ body {
 }
 
 .header-section .navigation-container .navigation-menu a img {
-  height: 130px;
+  height: 110px;
+}
+
+@media screen and (min-width: 1441px) {
+  .header-section .navigation-container .navigation-menu a {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 }
 
 .header-section .header-content {
   height: 85%;
-  background-image: url("../assets/service-page/service-bg.png");
+  background-image: url("../assets/service-page/service-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -113,7 +120,7 @@ body {
 
 @media screen and (max-width: 601px) {
   .header-section .header-content {
-    background-image: url("../assets/service-page/service-bg-mobile.png");
+    background-image: url("../assets/service-page/service-bg-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -122,28 +129,45 @@ body {
 
 .header-section .header-content .header-tagline {
   position: absolute;
-  left: 55%;
-  top: 50%;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
-}
-
-.header-section .header-content .header-tagline h1 {
-  color: #ffffff;
-  font-size: 6vmin;
-  font-weight: 900;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #95c11f;
+  height: 65vh;
+  z-index: 10;
+  border-top-left-radius: 300px;
 }
 
 @media screen and (min-width: 1441px) {
   .header-section .header-content .header-tagline {
-    left: 55%;
-    top: 50%;
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    border-top-left-radius: 350px;
   }
-  .header-section .header-content .header-tagline h1 {
-    font-size: 6vmin;
+  .header-section .header-content .header-tagline .header-leaf-left img {
+    height: 55vmin;
   }
+}
+
+.header-section .header-content .header-tagline .header-leaf-left {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.header-section .header-content .header-tagline .header-leaf-left img {
+  height: 45vmin;
+}
+
+.header-section .header-content .header-tagline .header-tagline-content {
+  width: 70%;
+  margin-left: 10%;
+}
+
+.header-section .header-content .header-tagline .header-tagline-content h1 {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 6vmin;
+  margin-bottom: 0;
 }
 
 .info-container {
@@ -763,16 +787,22 @@ body {
     margin-top: 2rem;
     padding: 2% 0;
   }
-  .header-section .header-content {
-    height: 91%;
-  }
   .header-section .header-content .header-tagline {
-    left: 5%;
-    top: 75%;
+    width: 100%;
+    height: 50vh;
+    border-top-left-radius: 150px;
+    top: 0;
+    right: 0;
   }
-  .header-section .header-content .header-tagline h1 {
-    color: #ffffff;
-    font-size: 28px;
+  .header-section .header-content .header-tagline .header-leaf-left img {
+    height: 55vmin;
+  }
+  .header-section .header-content .header-tagline .header-tagline-content {
+    margin-left: 5%;
+    width: 85%;
+  }
+  .header-section .header-content .header-tagline .header-tagline-content h1 {
+    font-size: 9vmin;
   }
   .info-container {
     height: 180px;

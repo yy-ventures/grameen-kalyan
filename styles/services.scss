@@ -59,8 +59,8 @@
             a {
                 text-decoration: none;
                 text-transform: capitalize;
-                font-size: 1.2rem;
-                font-weight: 700;
+                font-size: 17px;
+                font-weight: 600;
                 color: $white;
                 padding: 1%;
                 transition: 0.3s;
@@ -68,40 +68,64 @@
                     color: $secondaryColor;
                 }
                 img {
-                    height: 130px;
+                    height: 110px;
+                }
+            }
+            @media screen and (min-width: 1441px) {
+                a{
+                    font-size: 1.2rem;
+                    font-weight: 700;
                 }
             }
         }
     }
     .header-content {
         height: 85%;
-        background-image: url("../assets/service-page/service-bg.png");
+        background-image: url("../assets/service-page/service-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: relative;
         @media screen and (max-width: 601px) {
-            background-image: url("../assets/service-page/service-bg-mobile.png");
+            background-image: url("../assets/service-page/service-bg-mobile.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
         }
         .header-tagline {
             position: absolute;
-            left: 55%;
-            top: 50%;
-            transform: translateY(-40%);
-            h1 {
-                color: $white;
-                font-size: 6vmin;
-                font-weight: 900;
-            }
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            background-color: $lightGreen;
+            height: 65vh;
+            z-index: 10;
+            border-top-left-radius: 300px;
             @media screen and (min-width: 1441px) {
-                left: 55%;
-                top: 50%;
-                transform: translateY(-40%);
+                border-top-left-radius: 350px;
+                .header-leaf-left {
+                    img {
+                        height: 55vmin;
+                    }
+                }
+            }
+            .header-leaf-left {
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: -1;
+                img {
+                    height: 45vmin;
+                }
+            }
+            .header-tagline-content{
+                width: 70%;
+                margin-left: 10%;
                 h1 {
+                    font-weight: 900;
+                    color: $white;
                     font-size: 6vmin;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -636,13 +660,23 @@
             }
         }
         .header-content {
-            height: 91%;
             .header-tagline {
-                left: 5%;
-                top: 75%;
-                h1 {
-                    color: $white;
-                    font-size: 28px;
+                width: 100%;
+                height: 50vh;
+                border-top-left-radius: 150px;
+                top: 0;
+                right: 0;
+                .header-leaf-left {
+                    img {
+                        height: 55vmin;
+                    }
+                }
+                .header-tagline-content{
+                    margin-left: 5%;
+                    width: 85%;
+                    h1 {
+                        font-size: 9vmin;
+                    }
                 }
             }
         }

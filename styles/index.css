@@ -81,13 +81,14 @@ body {
       justify-content: space-around;
   margin-top: -30px;
   z-index: 1000;
+  padding: 0 1%;
 }
 
 .header-section .navigation-container .navigation-menu a {
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   color: #ffffff;
   padding: 1%;
   -webkit-transition: 0.3s;
@@ -96,6 +97,65 @@ body {
 
 .header-section .navigation-container .navigation-menu a:hover {
   color: #CC9B2B;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container {
+  position: relative;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container .container-btn {
+  cursor: pointer;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container .container-btn a:hover {
+  color: #ffffff;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container .down-arrow {
+  position: absolute;
+  right: -50%;
+  top: 10%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container .down-arrow img {
+  width: 15px;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container ul {
+  margin: 0;
+  position: absolute;
+  top: 200%;
+  left: -50%;
+  background-color: #0b612d;
+  list-style: none;
+  padding-left: 0;
+  padding: 0 20%;
+  border-radius: 5px;
+  display: none;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container ul li {
+  width: 120px;
+  padding: 10px;
+  border-bottom: 1px solid #95c11f;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container ul li:last-child {
+  border-bottom: 0;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container ul li a {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1441px) {
+  .header-section .navigation-container .navigation-menu a {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 }
 
 .header-section .header-content {
