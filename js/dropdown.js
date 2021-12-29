@@ -4,11 +4,11 @@ const downSign = document.getElementById("down-sign")
 
 dropDownBtn.addEventListener("click", e => {
     e.preventDefault()
-    if(containerList.style.display === "none"){
-        containerList.style.display = "block"
-        downSign.style.transform = "rotate(-180deg)"
-    }else{
+    if(containerList.style.display === "block"){
         containerList.style.display = "none"
         downSign.style.transform = "rotate(0deg)"
+    }else{
+        containerList.style.display = "block"
+        downSign.style.transform = "rotate(-180deg)"
     }
 })
