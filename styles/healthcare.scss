@@ -77,6 +77,51 @@
                     font-weight: 700;
                 }
             }
+            .dropdown-container{
+                position: relative;
+                .container-btn{
+                    cursor: pointer;
+                    a{
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                }
+                .down-arrow{
+                    position: absolute;
+                    right: -50%;
+                    top: 10%;
+                    transition: 0.3s;
+                    img{
+                        width: 15px;
+                    }
+                }
+                ul{
+                    margin: 0;
+                    position: absolute;
+                    top: 200%;
+                    left: -50%;
+                    background-color: $primaryColor;
+                    list-style: none;
+                    padding-left: 0;
+                    padding: 0 20%;
+                    border-radius: 5px;
+                    display: none;
+                    animation: menuAnimate 0.3s;
+                    li{
+                        width: 120px;
+                        padding: 10px;
+                        border-bottom: 1px solid $lightGreen;
+                        &:last-child{
+                            border-bottom: 0;
+                        }
+                        a{
+                            font-size: 17px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
         }
     }
     .header-content {
@@ -145,6 +190,17 @@
     }
 }
 
+@keyframes menuAnimate {
+    0%{
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 // info container
 .info-container {
     background: $primaryColor;
@@ -174,6 +230,7 @@
         }
     }
 }
+
 
 // info boxes container
 

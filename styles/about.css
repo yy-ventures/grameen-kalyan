@@ -235,8 +235,8 @@ body {
 @-webkit-keyframes menuAnimate {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%);
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
   }
   100% {
     opacity: 1;
@@ -248,8 +248,8 @@ body {
 @keyframes menuAnimate {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%);
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
   }
   100% {
     opacity: 1;
@@ -475,14 +475,19 @@ body {
   background-color: #13A438;
 }
 
-.vision-container .vision-box-container .vision-box h2 {
+.vision-container .vision-box-container .vision-box .vision-box-content {
+  width: 50%;
+  text-align: center;
+}
+
+.vision-container .vision-box-container .vision-box .vision-box-content h2 {
   color: #ffffff;
   font-weight: 900;
   font-size: 5vmin;
   text-transform: uppercase;
 }
 
-.vision-container .vision-box-container .vision-box p {
+.vision-container .vision-box-container .vision-box .vision-box-content p {
   color: #ffffff;
   font-size: 2vmin;
   margin-top: 5%;
@@ -578,31 +583,70 @@ body {
   }
 }
 
-.annual-report-section .annual-top {
-  padding: 5% 10% 10% 10%;
-  color: #0b612d;
+.inception-container {
+  height: 100vh;
+  padding: 5% 10%;
+  position: relative;
+}
+
+.inception-container .grid-leaf-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inception-container .grid-leaf-left img {
+  height: 25vmin;
+}
+
+.inception-container .grid-leaf-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.inception-container .grid-leaf-right img {
+  height: 75vmin;
+}
+
+.inception-container .inception-content .inception-header {
   text-align: center;
 }
 
-.annual-report-section .annual-top h4 {
-  font-weight: 700;
+.inception-container .inception-content .inception-header h2 {
+  color: #0b612d;
+  font-weight: 900;
   font-size: 6vmin;
 }
 
-.annual-report-section .annual-top h2 {
-  font-weight: 900;
-  font-size: 10vmin;
+.inception-container .inception-content .inception-body {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
-.annual-report-section .annual-top h5 {
-  font-weight: 700;
-  font-size: 5vmin;
+.inception-container .inception-content .inception-body p {
+  font-size: 18px;
+  color: #4A4A4A;
+  margin-top: 5%;
+}
+
+.inception-container .inception-footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.inception-container .inception-footer img {
+  height: 35vmin;
 }
 
 .annual-report-section .annual-bottom {
-  height: 800px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(9, 97, 45, 0.6))), url("../assets/annually-bottom.webp");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(9, 97, 45, 0.6)), url("../assets/annually-bottom.webp");
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/about/about-annual.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/about/about-annual.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -611,24 +655,12 @@ body {
 
 @media screen and (max-width: 601px) {
   .annual-report-section .annual-bottom {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(9, 97, 45, 0.6))), url("../assets/annually-bottom-mobile.webp");
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(9, 97, 45, 0.6)), url("../assets/annually-bottom-mobile.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/about/about-annual.jpeg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/about/about-annual.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-}
-
-.annual-report-section .annual-bottom .annual-stroke {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: -17.5vmin;
-}
-
-.annual-report-section .annual-bottom .annual-stroke img {
-  height: 35vmin;
 }
 
 .annual-report-section .annual-bottom .annual-reports {
@@ -654,6 +686,118 @@ body {
 }
 
 .annual-report-section .annual-bottom .annual-reports .annual-reports-grid p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.proud-container {
+  padding: 5% 10% 2% 10%;
+  position: relative;
+}
+
+.proud-container .grid-leaf-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.proud-container .grid-leaf-left img {
+  height: 25vmin;
+}
+
+.proud-container .grid-leaf-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.proud-container .grid-leaf-right img {
+  height: 75vmin;
+}
+
+.proud-container .proud-content .proud-header {
+  text-align: center;
+}
+
+.proud-container .proud-content .proud-header h2 {
+  color: #0b612d;
+  font-weight: 900;
+  font-size: 6vmin;
+}
+
+.proud-container .proud-content .proud-body {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.proud-container .proud-content .proud-body p {
+  font-size: 18px;
+  color: #4A4A4A;
+  margin-top: 5%;
+}
+
+.proud-container .proud-footer {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.proud-container .proud-footer h3 {
+  font-size: 10vmin;
+  color: #0b612d;
+  font-weight: 900;
+}
+
+.proud-container .proud-footer h4 {
+  color: #4A4A4A;
+  font-size: 4vmin;
+  font-weight: 700;
+}
+
+.proud-report-section .proud-bottom {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/about/about-annual.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/about/about-annual.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+@media screen and (max-width: 601px) {
+  .proud-report-section .proud-bottom {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/about/about-annual.jpeg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/about/about-annual.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.proud-report-section .proud-bottom .proud-reports {
+  padding: 5% 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.proud-report-section .proud-bottom .proud-reports .proud-reports-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2%;
+}
+
+.proud-report-section .proud-bottom .proud-reports .proud-reports-grid h3 {
+  color: #ffffff;
+  font-size: 7vmin;
+  font-weight: 500;
+}
+
+.proud-report-section .proud-bottom .proud-reports .proud-reports-grid p {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -972,6 +1116,29 @@ body {
     font-size: 16px;
     margin-top: 0.5rem;
   }
+  .vision-container .vision-box-container .vision-box {
+    height: 35vh;
+    background-color: #13A438;
+  }
+  .vision-container .vision-box-container .vision-box .vision-box-content {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .vision-container .vision-box-container .vision-box .vision-box-content h2 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  .vision-container .vision-box-container .vision-box .vision-box-content p {
+    font-size: 18px;
+  }
+  .vision-container .vision-box-container .vision-left {
+    border-top-left-radius: 100px;
+  }
+  .vision-container .vision-box-container .vision-right {
+    border-bottom-right-radius: 100px;
+  }
   .services {
     padding: 15% 10%;
   }
@@ -990,6 +1157,22 @@ body {
     font-size: 16px;
     color: #ffffff;
     margin-top: 1rem;
+  }
+  .inception-container .inception-content .inception-header {
+    text-align: left;
+  }
+  .inception-container .inception-content .inception-header h2 {
+    font-size: 36px;
+  }
+  .inception-container .inception-content .inception-body {
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .inception-container .inception-content .inception-body p {
+    font-size: 17px;
+    color: #4A4A4A;
+    margin-top: 10%;
   }
   .annual-report-section .annual-bottom {
     height: 800px;
@@ -1027,6 +1210,28 @@ body {
     font-size: 18px;
     font-weight: 700;
     color: #ffffff;
+  }
+  .proud-container .proud-content .proud-header {
+    text-align: left;
+  }
+  .proud-container .proud-content .proud-header h2 {
+    font-size: 36px;
+  }
+  .proud-container .proud-content .proud-body {
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .proud-container .proud-content .proud-body p {
+    font-size: 17px;
+    color: #4A4A4A;
+    margin-top: 10%;
+  }
+  .proud-container .proud-footer {
+    text-align: left;
+  }
+  .proud-container .proud-footer h4 {
+    font-size: 20px;
   }
   .footer-section {
     height: auto;

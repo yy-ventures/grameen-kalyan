@@ -26,10 +26,20 @@
             <!-- navigation menu -->
             <div class="navigation-menu">
                 <a href="/">home</a>
-                <a href="#">about us</a>
+                <a href="./about.html">about us</a>
                 <a href="./service.html">services</a>
                 <a href="./healthcare.html">healthcare</a>
-                <a href="#">people</a>
+                <div class="dropdown-container">
+                    <div id="container-btn" class="container-btn">
+                        <a href="#">people</a>
+                        <span class="down-arrow" id="down-sign"><img src="./assets/down-arrow.svg"></span>
+                    </div>
+                    <ul id="container-list">
+                        <li><a href="/">corporate</a></li>
+                        <li><a href="/">health force</a></li>
+                        <li><a href="/">join us</a></li>
+                    </ul>
+                </div>
                 <a href="#">stories</a>
                 <a href="#">contact</a>
                 <a href="#"><img src="./assets/glory.svg" alt=""></a>
@@ -315,5 +325,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/service.js"></script>
+    <script src="./js/dropdown.js"></script>
 </body>
 </html>

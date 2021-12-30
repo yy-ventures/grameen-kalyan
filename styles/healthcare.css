@@ -109,6 +109,60 @@ body {
   }
 }
 
+.header-section .navigation-container .navigation-menu .dropdown-container {
+  position: relative;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container .container-btn {
+  cursor: pointer;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container .container-btn a:hover {
+  color: #ffffff;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container .down-arrow {
+  position: absolute;
+  right: -50%;
+  top: 10%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container .down-arrow img {
+  width: 15px;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container ul {
+  margin: 0;
+  position: absolute;
+  top: 200%;
+  left: -50%;
+  background-color: #0b612d;
+  list-style: none;
+  padding-left: 0;
+  padding: 0 20%;
+  border-radius: 5px;
+  display: none;
+  -webkit-animation: menuAnimate 0.3s;
+          animation: menuAnimate 0.3s;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container ul li {
+  width: 120px;
+  padding: 10px;
+  border-bottom: 1px solid #95c11f;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container ul li:last-child {
+  border-bottom: 0;
+}
+
+.header-section .navigation-container .navigation-menu .dropdown-container ul li a {
+  font-size: 17px;
+  font-weight: 600;
+}
+
 .header-section .header-content {
   height: 85%;
   background-image: url("../assets/healthcare/healthcare-bg.webp");
@@ -184,6 +238,32 @@ body {
 
 .header-section .header-content .header-tagline .header-tagline-content .health-h3 {
   margin-left: 10%;
+}
+
+@-webkit-keyframes menuAnimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes menuAnimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .info-container {

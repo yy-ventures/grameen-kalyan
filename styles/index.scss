@@ -100,6 +100,7 @@
                     padding: 0 20%;
                     border-radius: 5px;
                     display: none;
+                    animation: menuAnimate 0.3s;
                     li{
                         width: 120px;
                         padding: 10px;
@@ -159,6 +160,17 @@
                 height: 20vmin;
             }
         }
+    }
+}
+
+@keyframes menuAnimate {
+    0%{
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
 
@@ -1077,6 +1089,17 @@
                 a {
                     margin-top: 2rem;
                     padding: 2% 0;
+                }
+                .dropdown-container{
+                    margin-top: 7.5%;
+                    ul{
+                        background-color: $white;
+                        li{
+                            a{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
                 }
             }
         }
