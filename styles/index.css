@@ -211,8 +211,8 @@ body {
 @-webkit-keyframes menuAnimate {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%);
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
   }
   100% {
     opacity: 1;
@@ -224,8 +224,8 @@ body {
 @keyframes menuAnimate {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%);
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
   }
   100% {
     opacity: 1;
