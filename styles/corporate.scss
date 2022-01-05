@@ -434,27 +434,20 @@
 }
 
 // board-members
-.about-board-members {
-    padding: 0 10% 0 10%;
-    .board-members-header {
-        height: 250px;
-        position: relative;
-        @media screen and (max-width: 601px) {
-            height: 150px;
-        }
-        .board-member-header-image {
-            position: absolute;
-            bottom: 0;
-            img {
-                width: 100%;
-            }
-            @media screen and (max-width: 601px) {
-                bottom: 50%;
-                transform: translateY(50%);
-            }
+.account-finance-members {
+    padding: 0 10% 10% 10%;
+    position: relative;
+    .account-finance-image{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        img{
+            width: 100%;
         }
     }
-    .board-member-body {
+    .account-finance-body {
         padding: 5% 0;
         .member-container {
             padding: 5% 0;
@@ -733,6 +726,21 @@
         }
     }
 }
+
+
+// account & finance
+.account-finance{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/account-finance.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    @media screen and (max-width: 601px) {
+        height: 25vh;
+    }
+}
+
 
 // stories
 .stories-section {
