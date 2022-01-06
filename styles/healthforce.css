@@ -173,7 +173,7 @@ body {
 
 .header-section .header-content {
   height: 85%;
-  background-image: url("../assets/people/corporate-bg.webp");
+  background-image: url("../assets/people/healthforce-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -182,7 +182,7 @@ body {
 
 @media screen and (max-width: 601px) {
   .header-section .header-content {
-    background-image: url("../assets/people/corporate-bg-mobile.webp");
+    background-image: url("../assets/people/healthforce-bg-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -480,22 +480,24 @@ body {
   height: 75vmin;
 }
 
+.vision-container .our-doctors {
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+}
+
+.vision-container .our-doctors img {
+  width: 100%;
+}
+
 .vision-container .vision-box-container {
   text-align: center;
 }
 
-.vision-container .vision-box-container h2 {
-  color: #0b612d;
-  font-weight: 900;
-  font-size: calc(32px + 2vmin);
-  text-transform: capitalize;
-  padding-bottom: 2.5%;
-}
-
 .vision-container .vision-box-container p {
   color: #4A4A4A;
-  font-size: calc(12px + 1vmin);
-  margin-top: 3%;
+  font-size: calc(10px + 2vmin);
+  margin-top: 5%;
 }
 
 .vision-container .vision-box-container .vision-left {
@@ -508,8 +510,8 @@ body {
 
 .management-leadership {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/management-leadership.webp");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/management-leadership.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/our-doctors-full.webp");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/our-doctors-full.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -555,7 +557,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 75%;
+  width: 50%;
 }
 
 .account-finance-members .account-finance-image img {
@@ -767,8 +769,8 @@ body {
 .account-finance-members .account-finance-body .member-container-three {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   gap: 0 1em;
   border-bottom: 1px solid #95c11f;
   position: relative;
@@ -812,19 +814,19 @@ body {
 }
 
 .account-finance-members .account-finance-body .member-container-three .member-container-three-container .member-image {
-  height: 25vh;
+  height: 20vh;
   overflow: hidden;
 }
 
 @media screen and (min-width: 1441px) {
   .account-finance-members .account-finance-body .member-container-three .member-container-three-container .member-image {
-    height: 30vh;
+    height: 25vh;
   }
 }
 
 @media screen and (max-width: 601px) {
   .account-finance-members .account-finance-body .member-container-three .member-container-three-container .member-image {
-    height: 30vh;
+    height: 25vh;
   }
 }
 
@@ -969,8 +971,8 @@ body {
 
 .account-finance {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/account-finance.webp");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/account-finance.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/dmfs-full.webp");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/dmfs-full.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -983,72 +985,61 @@ body {
   }
 }
 
-.human-resource {
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/resource-full.webp");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/resource-full.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.health-assistants-container {
+  padding: 5% 10% 20% 10%;
   position: relative;
 }
 
-@media screen and (max-width: 601px) {
-  .human-resource {
-    height: 25vh;
-  }
-}
-
-.human-resource .human-resource-image {
+.health-assistants-container .grid-leaf-left {
   position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 25%);
-          transform: translate(-50%, 25%);
-  width: 75%;
-  top: -15%;
+  top: 0;
+  left: 0;
 }
 
-.human-resource .human-resource-image img {
-  width: 100%;
-  height: 100%;
+.health-assistants-container .grid-leaf-left img {
+  height: 25vmin;
 }
 
-@media screen and (min-width: 1441px) {
-  .human-resource .human-resource-image {
-    -webkit-transform: translate(-50%, 35%);
-            transform: translate(-50%, 35%);
-    top: -21%;
-  }
-}
-
-.human-resource-members {
-  padding: 5% 10% 10% 10%;
-  position: relative;
-}
-
-.human-resource-members .procurement-image {
+.health-assistants-container .grid-leaf-right {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  right: 0;
+}
+
+.health-assistants-container .grid-leaf-right img {
+  height: 75vmin;
+}
+
+.health-assistants-container .our-doctors {
+  position: absolute;
+  bottom: 0;
   width: 75%;
 }
 
-.human-resource-members .procurement-image img {
+.health-assistants-container .our-doctors img {
   width: 100%;
 }
 
-.human-resource-members .human-resource-body {
-  padding: 5% 0;
+.health-assistants-container .vision-box-container {
+  text-align: center;
 }
 
-.human-resource-members .human-resource-body .member-container {
-  padding: 5% 0;
-  margin-top: 1%;
+.health-assistants-container .vision-box-container p {
+  color: #4A4A4A;
+  font-size: calc(10px + 2vmin);
+  margin-top: 5%;
 }
 
-.human-resource-members .human-resource-body .member-container-two {
+.health-assistants-container .vision-box-container .vision-left {
+  border-top-left-radius: 200px;
+}
+
+.health-assistants-container .vision-box-container .vision-right {
+  border-bottom-right-radius: 200px;
+}
+
+.health-assistants-container .member-container-three {
+  padding: 10% 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -1058,7 +1049,7 @@ body {
   position: relative;
 }
 
-.human-resource-members .human-resource-body .member-container-two .green-box {
+.health-assistants-container .member-container-three .green-box {
   position: absolute;
   height: 40px;
   width: 40px;
@@ -1076,210 +1067,96 @@ body {
   left: 30%;
 }
 
-.human-resource-members .human-resource-body .member-container-two .green-box .green-box-middle {
+.health-assistants-container .member-container-three .green-box .green-box-middle {
   width: 15px;
   height: 15px;
   background-color: #95c11f;
 }
 
 @media screen and (max-width: 601px) {
-  .human-resource-members .human-resource-body .member-container-two {
+  .health-assistants-container .member-container-three {
     gap: 3em 0;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container {
+.health-assistants-container .member-container-three .member-container-three-container {
   text-align: center;
   position: relative;
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container .member-image {
+.health-assistants-container .member-container-three .member-container-three-container .member-image {
   height: 20vh;
   overflow: hidden;
 }
 
 @media screen and (min-width: 1441px) {
-  .human-resource-members .human-resource-body .member-container-two .member-container-two-container .member-image {
+  .health-assistants-container .member-container-three .member-container-three-container .member-image {
     height: 25vh;
   }
 }
 
 @media screen and (max-width: 601px) {
-  .human-resource-members .human-resource-body .member-container-two .member-container-two-container .member-image {
+  .health-assistants-container .member-container-three .member-container-three-container .member-image {
     height: 25vh;
   }
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container .member-image img {
+.health-assistants-container .member-container-three .member-container-three-container .member-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container .member-details {
+.health-assistants-container .member-container-three .member-container-three-container .member-details {
   color: #4A4A4A;
   margin-top: 5%;
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container .member-details h4 {
+.health-assistants-container .member-container-three .member-container-three-container .member-details h4 {
   text-transform: capitalize;
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 0;
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container .member-details h6 {
+.health-assistants-container .member-container-three .member-container-three-container .member-details h6 {
   font-size: 0.9em;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 0;
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container .border-curve {
+.health-assistants-container .member-container-three .member-container-three-container .border-curve {
   border-radius: 15px;
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container .border-curve-left {
+.health-assistants-container .member-container-three .member-container-three-container .border-curve-left {
   border-top-left-radius: 100px;
 }
 
 @media screen and (max-width: 601px) {
-  .human-resource-members .human-resource-body .member-container-two .member-container-two-container .border-curve-left {
+  .health-assistants-container .member-container-three .member-container-three-container .border-curve-left {
     border-radius: 15px;
   }
 }
 
-.human-resource-members .human-resource-body .member-container-two .member-container-two-container .border-curve-right {
+.health-assistants-container .member-container-three .member-container-three-container .border-curve-right {
   border-bottom-right-radius: 100px;
 }
 
 @media screen and (max-width: 601px) {
-  .human-resource-members .human-resource-body .member-container-two .member-container-two-container .border-curve-right {
+  .health-assistants-container .member-container-three .member-container-three-container .border-curve-right {
     border-radius: 15px;
   }
 }
 
-.human-resource-members .human-resource-body .member-container-three {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  gap: 0 1em;
-  border-bottom: 1px solid #95c11f;
-  position: relative;
-}
-
-.human-resource-members .human-resource-body .member-container-three .green-box {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  bottom: -20px;
-  left: 70%;
-}
-
-.human-resource-members .human-resource-body .member-container-three .green-box .green-box-middle {
-  width: 15px;
-  height: 15px;
-  background-color: #95c11f;
-}
-
-@media screen and (max-width: 601px) {
-  .human-resource-members .human-resource-body .member-container-three {
-    gap: 3em 0;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container {
-  text-align: center;
-  position: relative;
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container .member-image {
-  height: 20vh;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 1441px) {
-  .human-resource-members .human-resource-body .member-container-three .member-container-three-container .member-image {
-    height: 25vh;
-  }
-}
-
-@media screen and (max-width: 601px) {
-  .human-resource-members .human-resource-body .member-container-three .member-container-three-container .member-image {
-    height: 25vh;
-  }
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container .member-image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container .member-details {
-  color: #4A4A4A;
-  margin-top: 5%;
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container .member-details h4 {
-  text-transform: capitalize;
-  font-size: 1em;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container .member-details h6 {
-  font-size: 0.9em;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 0;
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container .border-curve {
-  border-radius: 15px;
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container .border-curve-left {
-  border-top-left-radius: 100px;
-}
-
-@media screen and (max-width: 601px) {
-  .human-resource-members .human-resource-body .member-container-three .member-container-three-container .border-curve-left {
-    border-radius: 15px;
-  }
-}
-
-.human-resource-members .human-resource-body .member-container-three .member-container-three-container .border-curve-right {
-  border-bottom-right-radius: 100px;
-}
-
-@media screen and (max-width: 601px) {
-  .human-resource-members .human-resource-body .member-container-three .member-container-three-container .border-curve-right {
-    border-radius: 15px;
-  }
-}
-
-.services-procurement {
+.health-assistants-group {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/procurement.webp");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/procurement.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/assistants-full.webp");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/assistants-full.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1287,236 +1164,67 @@ body {
 }
 
 @media screen and (max-width: 601px) {
-  .services-procurement {
+  .health-assistants-group {
     height: 25vh;
   }
 }
 
-.services-procurement-container {
-  padding: 5% 10% 15% 10%;
-  position: relative;
-}
-
-.services-procurement-container .audit-image {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 75%;
-}
-
-.services-procurement-container .audit-image img {
-  width: 100%;
-}
-
-.services-procurement-container .grid-leaf-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.services-procurement-container .grid-leaf-left img {
-  height: 25vmin;
-}
-
-.services-procurement-container .grid-leaf-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.services-procurement-container .grid-leaf-right img {
-  height: 75vmin;
-}
-
-.services-procurement-container .member-container-three {
-  padding: 5% 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  gap: 0 1em;
-  border-bottom: 1px solid #95c11f;
-  position: relative;
-}
-
-.services-procurement-container .member-container-three .green-box {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  bottom: -20px;
-  left: 70%;
-}
-
-.services-procurement-container .member-container-three .green-box .green-box-middle {
-  width: 15px;
-  height: 15px;
-  background-color: #95c11f;
-}
-
-@media screen and (max-width: 601px) {
-  .services-procurement-container .member-container-three {
-    gap: 3em 0;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.services-procurement-container .member-container-three .member-container-three-container {
-  text-align: center;
-  position: relative;
-}
-
-.services-procurement-container .member-container-three .member-container-three-container .member-image {
-  height: 20vh;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 1441px) {
-  .services-procurement-container .member-container-three .member-container-three-container .member-image {
-    height: 25vh;
-  }
-}
-
-@media screen and (max-width: 601px) {
-  .services-procurement-container .member-container-three .member-container-three-container .member-image {
-    height: 25vh;
-  }
-}
-
-.services-procurement-container .member-container-three .member-container-three-container .member-image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.services-procurement-container .member-container-three .member-container-three-container .member-details {
-  color: #4A4A4A;
-  margin-top: 5%;
-}
-
-.services-procurement-container .member-container-three .member-container-three-container .member-details h4 {
-  text-transform: capitalize;
-  font-size: 1em;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-.services-procurement-container .member-container-three .member-container-three-container .member-details h6 {
-  font-size: 0.9em;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 0;
-}
-
-.services-procurement-container .member-container-three .member-container-three-container .border-curve {
-  border-radius: 15px;
-}
-
-.services-procurement-container .member-container-three .member-container-three-container .border-curve-left {
-  border-top-left-radius: 100px;
-}
-
-@media screen and (max-width: 601px) {
-  .services-procurement-container .member-container-three .member-container-three-container .border-curve-left {
-    border-radius: 15px;
-  }
-}
-
-.services-procurement-container .member-container-three .member-container-three-container .border-curve-right {
-  border-bottom-right-radius: 100px;
-}
-
-@media screen and (max-width: 601px) {
-  .services-procurement-container .member-container-three .member-container-three-container .border-curve-right {
-    border-radius: 15px;
-  }
-}
-
-.audit-internal {
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/audit-internal.webp");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/audit-internal.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-@media screen and (max-width: 601px) {
-  .audit-internal {
-    height: 25vh;
-  }
-}
-
-.brand-secretariat {
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../assets/people/brand-full.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../assets/people/brand-full.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-@media screen and (max-width: 601px) {
-  .brand-secretariat {
-    height: 25vh;
-  }
-}
-
-.brand-secretariat-container {
+.last-people-container {
   padding: 5% 10% 5% 10%;
   position: relative;
+  background-color: rgba(203, 154, 43, 0.3);
 }
 
-.brand-secretariat-container .audit-image {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 75%;
-}
-
-.brand-secretariat-container .audit-image img {
-  width: 100%;
-}
-
-.brand-secretariat-container .grid-leaf-left {
+.last-people-container .grid-leaf-left {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.brand-secretariat-container .grid-leaf-left img {
+.last-people-container .grid-leaf-left img {
   height: 25vmin;
 }
 
-.brand-secretariat-container .grid-leaf-right {
+.last-people-container .grid-leaf-right {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.brand-secretariat-container .grid-leaf-right img {
+.last-people-container .grid-leaf-right img {
   height: 75vmin;
 }
 
-.brand-secretariat-container .member-container-three {
-  padding: 5% 0;
+.last-people-container .our-doctors {
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+}
+
+.last-people-container .our-doctors img {
+  width: 100%;
+}
+
+.last-people-container .vision-box-container {
+  text-align: center;
+}
+
+.last-people-container .vision-box-container p {
+  color: #4A4A4A;
+  font-size: calc(10px + 2vmin);
+  margin-top: 5%;
+}
+
+.last-people-container .vision-box-container .vision-left {
+  border-top-left-radius: 200px;
+}
+
+.last-people-container .vision-box-container .vision-right {
+  border-bottom-right-radius: 200px;
+}
+
+.last-people-container .member-container-three {
+  padding: 10% 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -1526,11 +1234,11 @@ body {
   position: relative;
 }
 
-.brand-secretariat-container .member-container-three .green-box {
+.last-people-container .member-container-three .green-box {
   position: absolute;
   height: 40px;
   width: 40px;
-  background-color: #ffffff;
+  background-color: #efe0bf;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1544,88 +1252,88 @@ body {
   left: 70%;
 }
 
-.brand-secretariat-container .member-container-three .green-box .green-box-middle {
+.last-people-container .member-container-three .green-box .green-box-middle {
   width: 15px;
   height: 15px;
   background-color: #95c11f;
 }
 
 @media screen and (max-width: 601px) {
-  .brand-secretariat-container .member-container-three {
+  .last-people-container .member-container-three {
     gap: 3em 0;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container {
+.last-people-container .member-container-three .member-container-three-container {
   text-align: center;
   position: relative;
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container .member-image {
+.last-people-container .member-container-three .member-container-three-container .member-image {
   height: 20vh;
   overflow: hidden;
 }
 
 @media screen and (min-width: 1441px) {
-  .brand-secretariat-container .member-container-three .member-container-three-container .member-image {
+  .last-people-container .member-container-three .member-container-three-container .member-image {
     height: 25vh;
   }
 }
 
 @media screen and (max-width: 601px) {
-  .brand-secretariat-container .member-container-three .member-container-three-container .member-image {
+  .last-people-container .member-container-three .member-container-three-container .member-image {
     height: 25vh;
   }
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container .member-image img {
+.last-people-container .member-container-three .member-container-three-container .member-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container .member-details {
+.last-people-container .member-container-three .member-container-three-container .member-details {
   color: #4A4A4A;
   margin-top: 5%;
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container .member-details h4 {
+.last-people-container .member-container-three .member-container-three-container .member-details h4 {
   text-transform: capitalize;
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 0;
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container .member-details h6 {
+.last-people-container .member-container-three .member-container-three-container .member-details h6 {
   font-size: 0.9em;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 0;
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container .border-curve {
+.last-people-container .member-container-three .member-container-three-container .border-curve {
   border-radius: 15px;
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container .border-curve-left {
+.last-people-container .member-container-three .member-container-three-container .border-curve-left {
   border-top-left-radius: 100px;
 }
 
 @media screen and (max-width: 601px) {
-  .brand-secretariat-container .member-container-three .member-container-three-container .border-curve-left {
+  .last-people-container .member-container-three .member-container-three-container .border-curve-left {
     border-radius: 15px;
   }
 }
 
-.brand-secretariat-container .member-container-three .member-container-three-container .border-curve-right {
+.last-people-container .member-container-three .member-container-three-container .border-curve-right {
   border-bottom-right-radius: 100px;
 }
 
 @media screen and (max-width: 601px) {
-  .brand-secretariat-container .member-container-three .member-container-three-container .border-curve-right {
+  .last-people-container .member-container-three .member-container-three-container .border-curve-right {
     border-radius: 15px;
   }
 }
@@ -2095,4 +1803,4 @@ body {
     margin-top: 10%;
   }
 }
-/*# sourceMappingURL=corporate.css.map */
+/*# sourceMappingURL=healthforce.css.map */

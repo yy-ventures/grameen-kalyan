@@ -133,13 +133,13 @@
     }
     .header-content {
         height: 85%;
-        background-image: url("../assets/people/corporate-bg.webp");
+        background-image: url("../assets/people/healthforce-bg.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         position: relative;
         @media screen and (max-width: 601px) {
-            background-image: url("../assets/people/corporate-bg-mobile.webp");
+            background-image: url("../assets/people/healthforce-bg-mobile.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -383,19 +383,20 @@
             height: 75vmin;
         }
     }
+    .our-doctors{
+        position: absolute;
+        bottom: 0;
+        width: 75%;
+        img{
+            width: 100%;
+        }
+    }
     .vision-box-container {
         text-align: center;
-        h2{
-            color: $primaryColor;
-            font-weight: 900;
-            font-size: calc(32px + 2vmin);
-            text-transform: capitalize;
-            padding-bottom: 2.5%;
-        }
         p{
             color: $text;
-            font-size: calc(12px + 1vmin);
-            margin-top: 3%;
+            font-size: calc(10px + 2vmin);
+            margin-top: 5%;
         }
         .vision-left {
             border-top-left-radius: 200px;
@@ -405,11 +406,10 @@
         }
     }
 }
-
 // management-leadership
 .management-leadership{
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/management-leadership.webp');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/our-doctors-full.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -443,7 +443,7 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 75%;
+        width: 50%;
         img{
             width: 100%;
         }
@@ -589,7 +589,7 @@
         // grid three
         .member-container-three {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 0 1em;
             border-bottom: 1px solid $lightGreen;
             position: relative;
@@ -617,13 +617,13 @@
                 text-align: center;
                 position: relative;
                 .member-image {
-                    height: 25vh;
+                    height: 20vh;
                     overflow: hidden;
                     @media screen and (min-width: 1441px) {
-                        height: 30vh;
+                        height: 25vh;
                     }
                     @media screen and (max-width: 601px) {
-                        height: 30vh;
+                        height: 25vh;
                     }
                     img {
                         width: 100%;
@@ -732,7 +732,7 @@
 // account & finance
 .account-finance{
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/account-finance.webp');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/dmfs-full.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -742,241 +742,10 @@
     }
 }
 
-// management-leadership
-.human-resource{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/resource-full.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+// health assistants
+.health-assistants-container {
+    padding: 5% 10% 20% 10%;
     position: relative;
-    @media screen and (max-width: 601px) {
-        height: 25vh;
-    }
-    .human-resource-image{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 25%);
-        width: 75%;
-        top: -15%;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-        @media screen and (min-width: 1441px) {
-            transform: translate(-50%, 35%);
-            top: -21%;
-        }
-    }
-}
-
-// board-members
-.human-resource-members {
-    padding: 5% 10% 10% 10%;
-    position: relative;
-    .procurement-image{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 75%;
-        img{
-            width: 100%;
-        }
-    }
-    .human-resource-body {
-        padding: 5% 0;
-        .member-container {
-            padding: 5% 0;
-            margin-top: 1%;
-        }
-        // grid two
-        .member-container-two {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 0 1em;
-            border-bottom: 1px solid $lightGreen;
-            position: relative;
-            .green-box {
-                position: absolute;
-                height: 40px;
-                width: 40px;
-                background-color: $white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                bottom: -20px;
-                left: 30%;
-                .green-box-middle {
-                    width: 15px;
-                    height: 15px;
-                    background-color: $lightGreen;
-                }
-            }
-            @media screen and (max-width: 601px) {
-                gap: 3em 0;
-                grid-template-columns: repeat(1, 1fr);
-            }
-            .member-container-two-container {
-                text-align: center;
-                position: relative;
-                .member-image {
-                    height: 20vh;
-                    overflow: hidden;
-                    @media screen and (min-width: 1441px) {
-                        height: 25vh;
-                    }
-                    @media screen and (max-width: 601px) {
-                        height: 25vh;
-                    }
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-                .member-details {
-                    color: $text;
-                    margin-top: 5%;
-                    h4 {
-                        text-transform: capitalize;
-                        font-size: 1em;
-                        font-weight: 600;
-                        margin-bottom: 0;
-                    }
-                    h6 {
-                        font-size: 0.9em;
-                        font-weight: 600;
-                        text-transform: capitalize;
-                        margin-bottom: 0;
-                    }
-                }
-                .border-curve {
-                    border-radius: 15px;
-                }
-                .border-curve-left {
-                    border-top-left-radius: 100px;
-                    @media screen and (max-width: 601px) {
-                        border-radius: 15px;
-                    }
-                }
-                .border-curve-right {
-                    border-bottom-right-radius: 100px;
-                    @media screen and (max-width: 601px) {
-                        border-radius: 15px;
-                    }
-                }
-            }
-        }
-        // grid three
-        .member-container-three {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 0 1em;
-            border-bottom: 1px solid $lightGreen;
-            position: relative;
-            .green-box {
-                position: absolute;
-                height: 40px;
-                width: 40px;
-                background-color: $white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                bottom: -20px;
-                left: 70%;
-                .green-box-middle {
-                    width: 15px;
-                    height: 15px;
-                    background-color: $lightGreen;
-                }
-            }
-            @media screen and (max-width: 601px) {
-                gap: 3em 0;
-                grid-template-columns: repeat(1, 1fr);
-            }
-            .member-container-three-container {
-                text-align: center;
-                position: relative;
-                .member-image {
-                    height: 20vh;
-                    overflow: hidden;
-                    @media screen and (min-width: 1441px) {
-                        height: 25vh;
-                    }
-                    @media screen and (max-width: 601px) {
-                        height: 25vh;
-                    }
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-                .member-details {
-                    color: $text;
-                    margin-top: 5%;
-                    h4 {
-                        text-transform: capitalize;
-                        font-size: 1em;
-                        font-weight: 600;
-                        margin-bottom: 0;
-                    }
-                    h6 {
-                        font-size: 0.9em;
-                        font-weight: 600;
-                        text-transform: capitalize;
-                        margin-bottom: 0;
-                    }
-                }
-                .border-curve {
-                    border-radius: 15px;
-                }
-                .border-curve-left {
-                    border-top-left-radius: 100px;
-                    @media screen and (max-width: 601px) {
-                        border-radius: 15px;
-                    }
-                }
-                .border-curve-right {
-                    border-bottom-right-radius: 100px;
-                    @media screen and (max-width: 601px) {
-                        border-radius: 15px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-// account & finance
-.services-procurement{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/procurement.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    @media screen and (max-width: 601px) {
-        height: 25vh;
-    }
-}
-
-// vision container
-.services-procurement-container {
-    padding: 5% 10% 15% 10%;
-    position: relative;
-    .audit-image{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 75%;
-        img{
-            width: 100%;
-        }
-    }
     .grid-leaf-left {
         position: absolute;
         top: 0;
@@ -993,9 +762,31 @@
             height: 75vmin;
         }
     }
+    .our-doctors{
+        position: absolute;
+        bottom: 0;
+        width: 75%;
+        img{
+            width: 100%;
+        }
+    }
+    .vision-box-container {
+        text-align: center;
+        p{
+            color: $text;
+            font-size: calc(10px + 2vmin);
+            margin-top: 5%;
+        }
+        .vision-left {
+            border-top-left-radius: 200px;
+        }
+        .vision-right {
+            border-bottom-right-radius: 200px;
+        }
+    }
     // grid three
     .member-container-three {
-        padding: 5% 0;
+        padding: 10% 0;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 0 1em;
@@ -1010,7 +801,7 @@
             align-items: center;
             justify-content: center;
             bottom: -20px;
-            left: 70%;
+            left: 30%;
             .green-box-middle {
                 width: 15px;
                 height: 15px;
@@ -1074,11 +865,10 @@
     }
 }
 
-// audit internal 
-
-.audit-internal{
+// health-assistants-group
+.health-assistants-group{
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/audit-internal.webp');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/assistants-full.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1088,33 +878,11 @@
     }
 }
 
-// brand-secretariat
-.brand-secretariat{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../assets/people/brand-full.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    @media screen and (max-width: 601px) {
-        height: 25vh;
-    }
-}
-
-// vision container
-.brand-secretariat-container {
+// health assistants
+.last-people-container {
     padding: 5% 10% 5% 10%;
     position: relative;
-    .audit-image{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 75%;
-        img{
-            width: 100%;
-        }
-    }
+    background-color: rgba(203, 154, 43, 0.3);
     .grid-leaf-left {
         position: absolute;
         top: 0;
@@ -1131,9 +899,31 @@
             height: 75vmin;
         }
     }
+    .our-doctors{
+        position: absolute;
+        bottom: 0;
+        width: 75%;
+        img{
+            width: 100%;
+        }
+    }
+    .vision-box-container {
+        text-align: center;
+        p{
+            color: $text;
+            font-size: calc(10px + 2vmin);
+            margin-top: 5%;
+        }
+        .vision-left {
+            border-top-left-radius: 200px;
+        }
+        .vision-right {
+            border-bottom-right-radius: 200px;
+        }
+    }
     // grid three
     .member-container-three {
-        padding: 5% 0;
+        padding: 10% 0;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 0 1em;
@@ -1143,7 +933,7 @@
             position: absolute;
             height: 40px;
             width: 40px;
-            background-color: $white;
+            background-color: #efe0bf;
             display: flex;
             align-items: center;
             justify-content: center;
