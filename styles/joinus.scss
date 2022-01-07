@@ -366,7 +366,8 @@
 // join-us-body
 
 .join-us-body{
-    padding: 10%;
+    padding: 10% 10% 20% 10%;
+    position: relative;
     .join-us-body-header{
         text-align: center;
         margin: 0 auto;
@@ -376,8 +377,86 @@
             font-size: 6vmin;
         }
     }
+    .join-us-tagline{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        img{
+            width: 100%;
+        }
+    }
     .join-us-body-main{
-        
+        padding: 5% 0;
+        .main-content-list{
+            width: 100%;
+            height: 20vh;
+            margin-top: 5%;
+            position: relative;
+            background-color: #efe0bf;
+            @media screen and (max-width: 601px) {
+                height: auto;
+                margin-top: 10%;
+            }
+            .content-list-text{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1% 5%;
+                @media screen and (max-width: 601px) {
+                    padding: 5% 10%;
+                }
+                p{
+                    color: $text;
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                }
+            }
+            .number-container{
+                height: 120%;
+                background-color: $secondaryColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 0;
+                width: 17.33%;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                h2{
+                    font-weight: 900;
+                    color: $white;
+                    font-size: 12vmin;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+// join us form
+.join-us-form{
+    padding: 10%;
+    background-color: rgba($color: $border, $alpha: 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .form-container{
+        width: 50vw;
+        padding: 5%;
+        input{
+            width: 100%;
+            outline: none;
+            border: 0;
+            background-color: $white;
+            padding: 2% 3%;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            color: $text;
+        }
     }
 }
 
