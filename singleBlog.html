@@ -10,12 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/kalyan-fav.png" type="image/icon type">
     <title>Stories - Grameen Kalyan</title>
-    <link rel="stylesheet" href="./styles/stories.css">
+    <link rel="stylesheet" href="./styles/singleBlog.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -51,13 +53,12 @@
             </div>
         </div>
         <div class="header-content">
-            <div class="header-tagline d-flex align-items-center justify-content-center">
-                <div class="header-leaf-left">
-                    <img src="./assets/green-leaf-left.svg" alt="">
-                </div>
-                <div class="header-tagline-content">
-                    <h1 class="health-h1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">Stories</h1>
-                    <h1 class="health-h2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">that Inspire</h1>
+            <!-- blog-header-image -->
+            <div class="blog-header-image">
+                <div class="blog-header-image-content">
+                    <h5>Maintaining the trust & expectation of patients</h5>
+                    <h2>Grameen Kalyan intends <br>
+                        to give the best service</h2>
                 </div>
             </div>
         </div>
@@ -121,89 +122,95 @@
         </div>
     </section>
 
-    <!-- effort behind -->
+    <!-- main blog content -->
 
-    <section class="effort-behind">
-        <div class="effort-leaf-left">
-            <img src="./assets/stories/grid-leaf/grid-top-leaf.png" alt="">
-        </div>
-        <div class="effort-leaf-right">
-            <img src="./assets/stories/grid-leaf/grid-bottom-leaf.png" alt="">
-        </div>
-        <div class="effort-behind-content">
-            <h1>Effort Behind</h1>
-            <h1>Thousand real Stories</h1>
-            <p>Since 1996, Grameen Kalyan has delivered affordable and quality primary healthcare to minimize health inequalities and economic setbacks. Our effort touched millions of people across the country and became a part of their journey of wellbeing.</p>
-        </div>
+    <section class="main-blog-content">
+        <p>By providing an affordable and better healthcare experience to every individual under our care, we are determined to provide the best experience to every visitor of our health centers. Maintaining the trust and expectation of our patients, we aspire to give the best service that a healthcare center could offer. Doing so, Grameen Kalyan never compromises to maintain the legal, ethical and professional standards and government-approved guidelines for conducting Primary Healthcare Services across the country. Each of our health centers undergoes a rigorous process of evaluations and safety checks to be an established institute that abides by the health and safety protocols. At Kalyan, we pay strict and close attention to retaining license coverage, maintaining uniform Health Center infrastructure and interior. Alongside, we follow systematic hygiene & cleanliness, waste management, preserving pathological instruments, reagents, medicines and overall treatment protocols to ensure quality care and maintain patient satisfaction.</p>
     </section>
 
-    <!-- millions smile section -->
-    <section class="millions-smile-section">
-        <div class="million-smile-body">
-            <div class="smile-body-listings">
-                <div class="woman-child">
-                    <div class="smile-body-circle" id="smileCircle"></div>
-                </div>
-                <!-- smile-body-listings-left -->
-                <div class="smile-body-listings-left">
-                    <a href="./blogCollection.html">
-                        <div class="smile-list-item smile-list-item-6" id="smileList6">
-                            <p>Micro health insurance</p>
-                        </div>
-                    </a>
-                    <a href="./blogCollection.html">
-                        <div class="smile-list-item smile-list-item-1" id="smileList1">
-                            <p>Mother and Child Care</p>
-                        </div>
-                    </a>
-                    <a href="./blogCollection.html">
-                        <div class="smile-list-item smile-list-item-2" id="smileList2">
-                            <p>Emergency Response</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- smile-body-listings-right -->
-                <div class="smile-body-listings-right">
-                    <a href="./blogCollection.html">
-                        <div class="smile-list-item smile-list-item-3" id="smileList3">
-                            <p>Compliance is Priority</p>
-                        </div>
-                    </a>
-                    <a href="./blogCollection.html">
-                        <div class="smile-list-item smile-list-item-4" id="smileList4">
-                            <p>Diagnosis is Key</p>
-                        </div>
-                    </a>
-                    <a href="./blogCollection.html">
-                        <div class="smile-list-item smile-list-item-5" id="smileList5">
-                            <p>Fighting the Pandemic</p>
-                        </div>
-                    </a>
-                </div>
+    <!-- recent post slider -->
+
+    <section class="recent-post-container">
+        <div class="recent-post-header">
+            <h2>recent posts</h2>
+            <div class="white-box">
+                <div class="green-box"></div>
             </div>
         </div>
-        <div class="million-smile-body-mobile">
-            <div class="women-child-container">
-                <div class="women-child-container-circle" id="smileCircle"></div>
-            </div>
-            <div class="stories-header mt-3">
-                <img src="./assets/Stories.png" alt="">
-            </div>
-            <div class="stories-list">
-                <ul>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="400"
-                        id="smileList1">Mother and Child Care</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500"
-                        id="smileList2">Emergency Response</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600"
-                        id="smileList3">Compliance is Priority</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="800"
-                        id="smileList4">Diagnosis is Key</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="900"
-                        id="smileList5">Fighting the Pandemic</li>
-                    <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="900"
-                        id="smileList6">Micro health insurance</li>
-                </ul>
+        <div class="recent-post-body">
+            <div class="row recent-slider">
+                <div class="col-lg-12 recent-post-space">
+                    <a href="#">
+                        <div class="recent-post-card">
+                            <div class="post-card-image">
+                                <img src="./assets/stories/stories-page/blog-bg.webp" alt="">
+                            </div>
+                            <div class="post-card-body">
+                                <h2>micro health insurance</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-12 recent-post-space">
+                    <a href="#">
+                        <div class="recent-post-card">
+                            <div class="post-card-image">
+                                <img src="./assets/stories/stories-page/blog-bg.webp" alt="">
+                            </div>
+                            <div class="post-card-body">
+                                <h2>emergency response</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-12 recent-post-space">
+                    <a href="#">
+                        <div class="recent-post-card">
+                            <div class="post-card-image">
+                                <img src="./assets/stories/stories-page/blog-bg.webp" alt="">
+                            </div>
+                            <div class="post-card-body">
+                                <h2>diagnosis is the key</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-12 recent-post-space">
+                    <a href="#">
+                        <div class="recent-post-card">
+                            <div class="post-card-image">
+                                <img src="./assets/stories/stories-page/blog-bg.webp" alt="">
+                            </div>
+                            <div class="post-card-body">
+                                <h2>mother and child care</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-12 recent-post-space">
+                    <a href="#">
+                        <div class="recent-post-card">
+                            <div class="post-card-image">
+                                <img src="./assets/stories/stories-page/blog-bg.webp" alt="">
+                            </div>
+                            <div class="post-card-body">
+                                <h2>compliance is priority</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-12 recent-post-space">
+                    <a href="#">
+                        <div class="recent-post-card">
+                            <div class="post-card-image">
+                                <img src="./assets/stories/stories-page/blog-bg.webp" alt="">
+                            </div>
+                            <div class="post-card-body">
+                                <h2>fighting the pandemic</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -294,8 +301,9 @@
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/index-image-hover.js"></script>
     <script src="./js/dropdown.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom-slick.js"></script>
 </body>
 
 </html>

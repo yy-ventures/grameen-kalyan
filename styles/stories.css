@@ -630,6 +630,10 @@ body {
   z-index: 10;
 }
 
+.millions-smile-section .million-smile-body .smile-body-listings-right a {
+  text-decoration: none;
+}
+
 .millions-smile-section .million-smile-body .smile-body-listings-right .smile-list-item {
   padding: 5px 20px;
   background-color: inherit;
