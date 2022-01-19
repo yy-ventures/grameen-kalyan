@@ -642,6 +642,158 @@ body {
   border-left: 1px solid #95c11f;
 }
 
+.our-health-center-header {
+  height: calc(max(30vh, 200px));
+  position: relative;
+}
+
+.our-health-center-header h2 {
+  font-weight: 900;
+  color: #CC9B2B;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  font-size: calc(max(4vw, 36px));
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.health-center-location {
+  min-height: 100vh;
+  background-color: #f6ecd5;
+  padding: 5% 10%;
+}
+
+.health-center-location .bangladesh-map svg {
+  width: 100%;
+}
+
+.health-center-location .bangladesh-map svg .barisal-division {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.health-center-location .bangladesh-map svg .barisal-division path {
+  fill: #f6ecd5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.health-center-location .bangladesh-map svg .barisal-division:hover path {
+  fill: #0b612d;
+}
+
+.health-center-location .bangladesh-map svg .chittagong-division {
+  cursor: pointer;
+}
+
+.health-center-location .bangladesh-map svg .chittagong-division path {
+  fill: #f6ecd5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.health-center-location .bangladesh-map svg .chittagong-division:hover path {
+  fill: #0b612d;
+}
+
+.health-center-location .bangladesh-map svg .main-division {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #f6ecd5;
+}
+
+.health-center-location .bangladesh-map svg .main-division:hover {
+  fill: #0b612d;
+}
+
+.health-center-location .location-division h2 {
+  font-weight: 900;
+  color: #4A4A4A;
+  text-transform: capitalize;
+  font-size: calc(max(2vw, 24px));
+}
+
+.health-center-location .location-search input {
+  width: 100%;
+  padding: 10px 16px;
+  outline: 0;
+  border: 1px solid #0b612d;
+  border-radius: 10px;
+  background-color: #f6ecd5;
+  background-image: url("../assets/healthcare/map/search.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: #4A4A4A;
+}
+
+.health-center-location .location-image {
+  margin-top: 3%;
+  width: 100%;
+  height: calc(max(50vh, 250px));
+}
+
+.health-center-location .location-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.health-center-location .location-title {
+  margin-top: 3%;
+}
+
+.health-center-location .location-title h2 {
+  font-weight: 900;
+  color: #4A4A4A;
+  text-transform: capitalize;
+  font-size: calc(max(2.5vw, 24px));
+}
+
+.health-center-location .location-contact {
+  margin-top: 2%;
+}
+
+.health-center-location .location-contact .contact-icon {
+  color: #CC9B2B;
+  font-size: calc(max(1.1vw, 16px));
+  padding-right: 3%;
+}
+
+.health-center-location .location-contact p {
+  color: #4A4A4A;
+  font-size: calc(max(1.1vw, 16px));
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.health-center-location .location-options-table {
+  margin-top: 2%;
+  height: calc(max(10vh, 150px));
+  background-color: #eed9aa;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.health-center-location .location-options-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.health-center-location .location-options-table td, .health-center-location .location-options-table th {
+  border: 1px solid #999;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.health-center-location .location-options-table tr:nth-child(even) {
+  background-color: #e2bc6a;
+}
+
 .millions-smile-section .millions-smile-header {
   padding: 10% 5% 10% 5%;
   position: relative;
@@ -728,6 +880,10 @@ body {
   z-index: 10;
 }
 
+.millions-smile-section .million-smile-body .smile-body-listings-left a {
+  text-decoration: none;
+}
+
 .millions-smile-section .million-smile-body .smile-body-listings-left .smile-list-item {
   padding: 5px 20px;
   background-color: inherit;
@@ -783,6 +939,10 @@ body {
   bottom: 20%;
   right: 5%;
   z-index: 10;
+}
+
+.millions-smile-section .million-smile-body .smile-body-listings-right a {
+  text-decoration: none;
 }
 
 .millions-smile-section .million-smile-body .smile-body-listings-right .smile-list-item {

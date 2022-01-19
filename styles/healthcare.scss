@@ -509,6 +509,147 @@
     }
 }
 
+
+// health center header
+.our-health-center-header{
+    height: calc(max(30vh, 200px));
+    position: relative;
+    h2{
+        font-weight: 900;
+        color: $secondaryColor;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        font-size: calc(max(4vw, 36px));
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+}
+
+// health center location
+.health-center-location{
+    min-height: 100vh;
+    background-color: #f6ecd5;
+    padding: 5% 10%;
+    .bangladesh-map{
+        svg{
+            width: 100%;
+            .barisal-division{
+                cursor: pointer;
+                transition: 0.3s;
+                path{
+                    fill: #f6ecd5;
+                    transition: 0.3s;
+                }
+                &:hover{
+                    path{
+                        fill: $primaryColor;
+                    }
+                }
+            }
+            .chittagong-division{
+                cursor: pointer;
+                path{
+                    fill: #f6ecd5;
+                    transition: 0.3s;
+                }
+                &:hover{
+                    path{
+                        fill: $primaryColor;
+                    }
+                }
+            }
+            .main-division{
+                cursor: pointer;
+                transition: 0.3s;
+                fill: #f6ecd5;
+                &:hover{
+                    fill: $primaryColor;
+                }
+            }
+        }
+    }
+    .location-division{
+        h2{
+            font-weight: 900;
+            color: $text;
+            text-transform: capitalize;
+            font-size: calc(max(2vw, 24px));
+        }
+    }
+    .location-search{
+        input{
+            width: 100%;
+            padding: 10px 16px;
+            outline: 0;
+            border: 1px solid $primaryColor;
+            border-radius: 10px;
+            background-color: #f6ecd5;
+            background-image: url('../assets/healthcare/map/search.svg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            color: $text;
+        }
+    }
+    .location-image{
+        margin-top: 3%;
+        width: 100%;
+        height: calc(max(50vh, 250px));
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .location-title{
+        margin-top: 3%;
+        h2{
+            font-weight: 900;
+            color: $text;
+            text-transform: capitalize;
+            font-size: calc(max(2.5vw, 24px));
+        }
+    }
+    .location-contact{
+        margin-top: 2%;
+        .contact-icon{
+            color: $secondaryColor;
+            font-size: calc(max(1.1vw, 16px));
+            padding-right: 3%;
+        }
+        p{
+            color: $text;
+            font-size: calc(max(1.1vw, 16px));
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+    .location-options-table{
+        margin-top: 2%;
+        height: calc(max(10vh, 150px));
+        background-color: #eed9aa;
+        border-radius: 5px;
+        overflow-y: scroll;
+        table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td, th {
+            border: 1px solid #999;
+            text-align: left;
+            padding: 8px;
+            cursor: pointer;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #e2bc6a;
+          }
+    }
+}
+
+
+// millions smile
 .millions-smile-section {
     .millions-smile-header {
         padding: 10% 5% 10% 5%;
@@ -575,6 +716,9 @@
             top: 20%;
             left: 5%;
             z-index: 10;
+            a{
+                text-decoration: none;
+            }
             .smile-list-item {
                 padding: 5px 20px;
                 background-color: inherit;
@@ -621,6 +765,9 @@
             bottom: 20%;
             right: 5%;
             z-index: 10;
+            a{
+                text-decoration: none;
+            }
             .smile-list-item {
                 padding: 5px 20px;
                 background-color: inherit;
